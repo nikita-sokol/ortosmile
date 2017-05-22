@@ -1,0 +1,249 @@
+@media only screen and (max-width: 1199px) {
+  .doubt-dream {
+    font-size: 36px;
+    line-height: normal;
+    padding-right: 40px;
+  }
+  .doubt-item {
+    font-size: 20px;
+  }
+  .doubt-entry {
+    font-size: 20px;
+    padding-right: 30px;
+  }
+  .m-calm {
+    background: url(../img/bg-m-calm-g.png) no-repeat, url(../img/bg-m-calm.jpg) no-repeat;
+    background-position: -webkit-calc(50% - 595px + 210px) bottom, center bottom;
+    background-position: calc(50% - 595px + 210px) bottom, center bottom;
+    background-size: auto 470px, auto 474px;
+    background-color: #009999;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .calm-advantage {
+    font-size: 32px;
+    margin-bottom: 45px;
+  }
+  .calm-item {
+    font-size: 16px;
+    width: 160px;
+  }
+  .s-block-img {
+    width: 230px;
+  }
+  .s-text,
+  .s-hygiene-title {
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    float: left;
+    width: -webkit-calc(100% - 230px - 15px);
+    width: calc(100% - 230px - 15px);
+  }
+  .s-text h5,
+  .s-hygiene-title h5 {
+    font-weight: bold;
+  }
+  .s-text h5 + p,
+  .s-hygiene-title h5 + p {
+    margin-top: 8px;
+  }
+  .s-equipment {
+    margin-top: 70px;
+  }
+  .s-equipment p {
+    margin-bottom: 13px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .m-doubt {
+    background-size: auto 440px, auto 540px;
+  }
+  .doubt-dream {
+    font-size: 26px;
+    padding-right: 45px;
+  }
+  .doubt-entry {
+    font-size: 18px;
+    padding-right: 60px;
+  }
+  .doubt-item {
+    font-size: 18px;
+  }
+  .m-calm {
+    background: url(../img/bg-m-calm-g.png) no-repeat, url(../img/bg-m-calm.jpg) no-repeat;
+    background-position: -webkit-calc(50% - 590px + 210px) bottom, center bottom;
+    background-position: calc(50% - 590px + 210px) bottom, center bottom;
+    background-size: auto 450px, auto 474px;
+    background-color: #009999;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .calm-advantage {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+  .calm-item {
+    font-size: 16px;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .s-block-img {
+    width: 280px;
+    float: left;
+  }
+  .s-text,
+  .s-hygiene-title {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    float: left;
+    width: -webkit-calc(100% - 280px - 15px);
+    width: calc(100% - 280px - 15px);
+  }
+  .s-text h5,
+  .s-hygiene-title h5 {
+    font-weight: bold;
+  }
+  .s-text h5 + p,
+  .s-hygiene-title h5 + p {
+    margin-top: 20px;
+  }
+  .services-table {
+    margin-top: 30px;
+  }
+  .s-equipment {
+    margin-top: 45px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .m-doubt {
+    background: url(../img/bg-m-doubt.jpg) center bottom no-repeat;
+    background-size: auto 540px;
+    background-color: #f0f0f0;
+    padding-top: 45px;
+    padding-bottom: 50px;
+  }
+  .doubt-dream {
+    font-size: 36px;
+    line-height: normal;
+    margin-bottom: 40px;
+    padding-right: 0px;
+  }
+  .doubt-entry {
+    font-size: 20px;
+    padding-right: 0px;
+    margin-bottom: 30px;
+  }
+  .doubt-item {
+    font-size: 22px;
+    font-weight: bold;
+    padding-right: 90px;
+  }
+  .doubt-item + .doubt-item {
+    margin-top: 40px;
+  }
+  .m-calm {
+    background: url(../img/bg-m-calm.jpg) no-repeat;
+    background-position: center bottom;
+    background-size: auto 474px;
+    background-color: #009999;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .calm-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .calm-advantage {
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+  .calm-item {
+    font-size: 16px;
+    margin-top: 50px;
+    padding-left: 70px;
+    width: 100%;
+  }
+  .calm-item:before {
+    position: absolute;
+    background: url(../img/i-calm-item.svg) 0 0 no-repeat;
+    background-size: cover;
+    left: 0px;
+    top: -5px;
+    content: "";
+    width: 53px;
+    height: 53px;
+  }
+  .logo-unitek,
+  .logo-invisdling,
+  .logo-invisdling-teen {
+    width: 256px;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .doubt-item {
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 0px;
+  }
+  .s-text {
+    padding: 15px;
+    padding-bottom: 20px;
+    float: left;
+    width: 100%;
+  }
+  .s-text h5 {
+    font-weight: bold;
+  }
+  .s-text h5 + p {
+    margin-top: 10px;
+  }
+  .s-hygiene-title {
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-bottom: 0px;
+    float: left;
+    width: 100%;
+  }
+  .s-hygiene-title h5 {
+    font-weight: bold;
+    margin-top: 0px;
+  }
+  .s-hygiene-title h5 + p {
+    margin-top: 20px;
+  }
+  .s-hygiene-text {
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .doubt-dream {
+    font-size: 30px;
+  }
+  .doubt-item {
+    margin-top: 30px;
+  }
+  .calm-advantage {
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-bottom: 20px;
+  }
+  .calm-item {
+    font-size: 16px;
+    margin-top: 30px;
+    padding-left: 70px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .calm-advantage {
+    font-size: 28px;
+  }
+  .services-title h4 {
+    font-size: 28px;
+  }
+}

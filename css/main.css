@@ -536,51 +536,6 @@ header {
   width: 100%;
   height: auto;
 }
-/*.s-metal-braces,
-.s-ceramic-braces,
-.s-mouthguard,
-.s-internal-braces,
-.s-devices-children,
-.s-clean,
-.s-whitening-teeth {
-	width: 280px;
-	float: left;
-	font-size:0; 
-    line-height:0;
-    letter-spacing:-1px;
-	img {
-		width: 100%;
-		height: auto;
-	}
-}*/
-/*.s-metal-braces {
-	
-	
-}
-.s-ceramic-braces {
-	background: url(../img/services-ceramic-braces.jpg) 0 0 no-repeat;
-	background-size: cover;
-}
-.s-mouthguard {
-	background: url(../img/services-mouthguard.jpg) 0 0 no-repeat;
-	background-size: cover;
-}
-.s-internal-braces {
-	background: url(../img/services-internal-braces.jpg) 0 0 no-repeat;
-	background-size: cover;
-}
-.s-devices-children {
-	background: url(../img/services-devices-children.jpg) 0 0 no-repeat;
-	background-size: cover;
-}
-.s-clean {
-	background: url(../img/services-clean.jpg) 0 0 no-repeat;
-	background-size: cover;
-}
-.s-whitening-teeth {
-	background: url(../img/services-whitening-teeth.jpg) 0 0 no-repeat;
-	background-size: cover;
-}*/
 .s-text,
 .s-hygiene-title {
   padding-top: 15px;

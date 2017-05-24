@@ -20,6 +20,10 @@
     left: 35px;
     top: -11px;
   }
+  .h-body {
+    background: #fff url(../img/bg-main-header.jpg) 74% 0 no-repeat;
+    background-size: auto 100%;
+  }
   .h-doctor,
   .h-people,
   .h-hygienist {
@@ -175,7 +179,7 @@
     height: 90px;
   }
   .h-table-cell {
-    text-align: center;
+    text-align: left;
     vertical-align: middle;
     display: table-cell;
   }
@@ -234,8 +238,8 @@
   }
   .m-calm {
     background: url(../img/bg-m-calm-g.png) no-repeat, url(../img/bg-m-calm.jpg) no-repeat;
-    background-position: -webkit-calc(50% - 590px + 210px) bottom, center bottom;
-    background-position: calc(50% - 590px + 210px) bottom, center bottom;
+    background-position: left -115px bottom, center bottom;
+    background-size: auto 474px;
     background-size: auto 450px, auto 474px;
     background-color: #009999;
     padding-top: 50px;
@@ -394,8 +398,10 @@
     padding-top: 50px;
   }
   .m-doubt {
-    background: url(../img/bg-m-doubt.jpg) center bottom no-repeat;
-    background-size: auto 540px;
+    /*background: url(../img/bg-m-doubt.jpg) center bottom no-repeat;
+	background-size: auto 540px;*/
+    background: url(../img/bg-m-doubt-g.png) center bottom no-repeat, url(../img/bg-m-doubt.jpg) center bottom no-repeat;
+    background-size: auto 460px, auto 540px;
     background-color: #f0f0f0;
     padding-top: 45px;
     padding-bottom: 50px;
@@ -420,8 +426,8 @@
     margin-top: 40px;
   }
   .m-calm {
-    background: url(../img/bg-m-calm.jpg) no-repeat;
-    background-position: center bottom;
+    background: url(../img/bg-m-calm-g.png) no-repeat, url(../img/bg-m-calm.jpg) no-repeat;
+    background-position: left -115px bottom, center bottom;
     background-size: auto 474px;
     background-color: #009999;
     padding-top: 50px;

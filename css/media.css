@@ -398,8 +398,6 @@
     padding-top: 50px;
   }
   .m-doubt {
-    /*background: url(../img/bg-m-doubt.jpg) center bottom no-repeat;
-	background-size: auto 540px;*/
     background: url(../img/bg-m-doubt-g.png) center bottom no-repeat, url(../img/bg-m-doubt.jpg) center bottom no-repeat;
     background-size: auto 460px, auto 540px;
     background-color: #f0f0f0;

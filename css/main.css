@@ -128,6 +128,9 @@ header {
   -webkit-transition: .5s;
   transition: .5s;
 }
+.menu-mobile-list-in {
+  display: none;
+}
 /* end Hamburger Button */
 .h-head {
   padding: 15px 0 10px;
@@ -221,10 +224,12 @@ header {
   left: 0;
   background: rgba(115, 196, 0, 0.9);
   font-weight: bold;
+  z-index: 10;
 }
 .main-menu menu {
   padding: 40px 110px;
-  overflow: hidden;
+  display: inline-block;
+  width: 100%;
 }
 .main-menu menu > li {
   float: left;
@@ -272,7 +277,6 @@ header {
 }
 .menu-services > ul,
 .menu-info > ul {
-  display: none;
   position: absolute;
   width: 310px;
   left: -35px;
@@ -295,13 +299,16 @@ header {
   width: 0;
   height: 0;
 }
-.main-menu-list li {
+.main-menu-list-in {
+  display: none;
+}
+.main-menu-list-in li {
   margin-top: 15px;
 }
-.main-menu-list li:first-child {
+.main-menu-list-in li:first-child {
   margin-top: 0;
 }
-.main-menu-list a:hover {
+.main-menu-list-in a:hover {
   color: #73c400;
   text-decoration: underline;
 }
@@ -609,10 +616,6 @@ header {
 .btn-services:hover {
   background: #79ce00;
 }
-/*.m-table-cell {
-	display: table-cell;
-	vertical-align: middle;
-}*/
 .m-doctors {
   padding-top: 66px;
   padding-bottom: 76px;
@@ -821,20 +824,23 @@ header {
   padding-top: 26px;
   padding-bottom: 26px;
 }
-.results-diagnosis strong {
+.results-diagnosis-text strong {
   font-weight: bold;
 }
-.results-works {
+.results-diagnosis-item {
+  display: none;
+}
+.results-works-text {
   margin-top: 40px;
 }
-.results-works li {
+.results-works-text li {
   padding-left: 35px;
   position: relative;
 }
-.results-works li + li {
+.results-works-text li + li {
   margin-top: 15px;
 }
-.results-works li:after {
+.results-works-text li:after {
   position: absolute;
   background: url(../img/i-results-v.svg) 0 0 no-repeat;
   background-size: cover;
@@ -843,6 +849,9 @@ header {
   left: 0px;
   top: 0px;
   content: "";
+}
+.results-works-item {
+  display: none;
 }
 .m-gallery-clinic {
   padding: 70px 0 80px;

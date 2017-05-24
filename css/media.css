@@ -4,12 +4,70 @@
     line-height: normal;
     padding-right: 40px;
   }
+  .main-menu menu {
+    padding: 40px 0px;
+  }
+  .main-menu menu > li {
+    float: left;
+    margin-left: 80px;
+    color: #fff;
+    font-size: 18px;
+  }
+  .menu-services > ul {
+    left: -15px;
+  }
+  .menu-services > ul:before {
+    left: 35px;
+    top: -11px;
+  }
+  .h-doctor,
+  .h-people,
+  .h-hygienist {
+    padding: 140px 0px 0;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+  }
+  .h-doctor:before,
+  .h-people:before,
+  .h-hygienist:before {
+    left: 11px;
+    top: 0px;
+    width: 110px;
+    height: 110px;
+  }
   .doubt-item {
     font-size: 20px;
   }
   .doubt-entry {
     font-size: 20px;
     padding-right: 30px;
+  }
+  .h-information {
+    padding: 15px 0 20px;
+    height: 225px;
+    background: #fff;
+    color: #fff;
+    position: relative;
+  }
+  .information-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    padding-left: 180px;
+    height: 190px;
+    width: 515px;
+    z-index: 20;
+    background: url(../img/bg-additional-info-round.png) left bottom no-repeat, url(../img/bg-information-cloud.png) 120px 0px no-repeat;
+    background-size: auto 100%, auto 100%;
+  }
+  .information-text {
+    font-size: 20px;
+    width: 290px;
+  }
+  .information-text span {
+    font-weight: bold;
   }
   .m-calm {
     background: url(../img/bg-m-calm-g.png) no-repeat, url(../img/bg-m-calm.jpg) no-repeat;
@@ -54,8 +112,112 @@
   .s-equipment p {
     margin-bottom: 13px;
   }
+  .gallery-clinic-list {
+    margin-top: 65px;
+  }
+  .gallery-clinic-link {
+    height: 212px;
+  }
+  .m-process {
+    padding: 60px 0 65px;
+  }
+  .m-process h3 {
+    margin-bottom: 55px;
+  }
+  .additional-list {
+    font-size: 22px;
+  }
+  .additional-info-wrap {
+    padding-top: 50px;
+    height: 240px;
+  }
 }
 @media only screen and (max-width: 991px) {
+  .h-logo img {
+    width: 160px;
+  }
+  .btn-registration {
+    width: 160px;
+  }
+  .btn-application {
+    width: 160px;
+  }
+  .main-menu menu > li {
+    float: left;
+    margin-left: 43px;
+    color: #fff;
+    font-size: 17px;
+  }
+  .menu-info > ul {
+    left: -75px;
+    top: 60px;
+  }
+  .menu-info > ul:before {
+    left: 95px;
+    top: -11px;
+  }
+  .h-doctor,
+  .h-people,
+  .h-hygienist {
+    margin-bottom: 10px;
+    height: 90px;
+    padding: 0;
+    padding-left: 110px;
+    text-align: left;
+    font-size: 16px;
+    position: relative;
+    display: table;
+  }
+  .h-doctor:before,
+  .h-people:before,
+  .h-hygienist:before {
+    width: 90px;
+    height: 90px;
+  }
+  .h-table-cell {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+  }
+  .h-form {
+    background: rgba(255, 102, 0, 0.81);
+    margin-top: 20px;
+    padding: 35px 40px 30px;
+    -webkit-border-radius: 16px;
+            border-radius: 16px;
+    position: relative;
+  }
+  .h-form p {
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 23px;
+  }
+  .h-information {
+    padding: 0;
+    height: auto;
+    background: #73c400;
+    color: #fff;
+    position: relative;
+  }
+  .information-wrap {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-top: 70px;
+    padding-left: 180px;
+    height: 190px;
+    width: 100%;
+    z-index: 20;
+    background: url(../img/bg-additional-info-round.png) left bottom no-repeat, url(../img/bg-information-cloud.png) 120px 0px no-repeat;
+    background-size: auto 100%, auto 100%;
+  }
+  .information-text {
+    font-size: 20px;
+    width: 100%;
+  }
+  .information-text span {
+    font-weight: bold;
+  }
   .m-doubt {
     background-size: auto 440px, auto 540px;
   }
@@ -88,6 +250,12 @@
     margin-top: 50px;
     width: 100%;
   }
+  .m-services {
+    padding: 50px 0 40px;
+  }
+  .m-services h3 {
+    margin-bottom: 10px;
+  }
   .s-block-img {
     width: 280px;
     float: left;
@@ -115,8 +283,116 @@
   .s-equipment {
     margin-top: 45px;
   }
+  .m-doctors {
+    padding-top: 50px;
+    padding-bottom: 55px;
+  }
+  .certificates-i {
+    text-align: center;
+  }
+  .certificates-i img {
+    width: 200px;
+    -webkit-box-shadow: 0 3px 57px rgba(0, 0, 0, 0.37);
+            box-shadow: 0 3px 57px rgba(0, 0, 0, 0.37);
+  }
+  .advantages-title h4 {
+    font-size: 26px;
+  }
+  .results-info {
+    margin-top: 10px;
+  }
+  .gallery-clinic-link {
+    height: 345px;
+  }
+  .gallery-clinic-item {
+    margin-top: 20px;
+  }
+  .gallery-clinic-list {
+    margin-top: 55px;
+  }
+  .process-list {
+    background: none;
+  }
+  .process-item,
+  .process-last-item {
+    font-size: 16px;
+  }
+  .additional-info-wrap {
+    padding-top: 40px;
+    height: 190px;
+  }
+  .additional-text {
+    font-size: 18px;
+    padding-bottom: 25px;
+  }
+  .additional-list li {
+    position: relative;
+    padding-left: 36px;
+    font-size: 18px;
+  }
+  .details-text {
+    font-size: 22px;
+    line-height: normal;
+    padding-left: 10px;
+  }
+  .btn-details {
+    margin-top: 20px;
+  }
 }
 @media only screen and (max-width: 767px) {
+  .h-logo .h-logo img {
+    width: 160px;
+  }
+  .btn-registration {
+    color: #425058;
+    border: 1px solid #73c400;
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+    text-align: center;
+    width: 53px;
+    height: 38px;
+    line-height: 38px;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 16px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .btn-registration p {
+    display: none;
+  }
+  .btn-registration img {
+    display: inline-block;
+    margin-top: 6px;
+  }
+  .btn-application {
+    color: #fff;
+    background: #73c400;
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+    text-align: left;
+    width: 53px;
+    height: 38px;
+    line-height: 38px;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 16px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .btn-application p {
+    display: none;
+  }
+  .btn-application img {
+    display: inline-block;
+    margin-top: 7px;
+    margin-left: 17px;
+  }
+  .h-body {
+    padding-top: 50px;
+  }
   .m-doubt {
     background: url(../img/bg-m-doubt.jpg) center bottom no-repeat;
     background-size: auto 540px;
@@ -180,11 +456,117 @@
   .logo-invisdling-teen {
     width: 256px;
     display: block;
-    margin: auto;
+    margin: 0 auto;
     margin-top: 15px;
+  }
+  .main-doctor-img {
+    width: 280px;
+    float: left;
+  }
+  .m-doctor-info-text {
+    font-size: 16px;
+  }
+  .m-doctor-text {
+    margin-top: 22px;
+    font-size: 16px;
+  }
+  .doctors-intro {
+    margin-top: 40px;
+  }
+  .doctor-fact {
+    font-size: 18px;
+  }
+  .doctor-item {
+    margin-top: 40px;
+    text-align: left;
+  }
+  .doctor-item .doctor-name {
+    margin-top: 15px;
+  }
+  .doctor-item .doctor-post {
+    margin-top: 20px;
+  }
+  .doctor-img img {
+    width: 200px;
+    margin-right: 15px;
+    float: left;
+  }
+  .doctor-i-name {
+    margin-top: 25px;
+  }
+  .doctor-i-post {
+    margin-top: 10px;
+  }
+  .certificates-i + .certificates-i {
+    margin-top: 50px;
+  }
+  .certificates-i {
+    text-align: center;
+  }
+  .certificates-i img {
+    width: 290px;
+    -webkit-box-shadow: 0 3px 57px rgba(0, 0, 0, 0.37);
+            box-shadow: 0 3px 57px rgba(0, 0, 0, 0.37);
+  }
+  .m-advantages ul {
+    background: #fff;
+    padding: 40px 20px 40px 25px;
+  }
+  .gallery-clinic-link {
+    height: 290px;
+  }
+  .process-item,
+  .process-last-item {
+    font-size: 18px;
+    padding-top: 20px;
+    padding-left: 200px;
+    height: 120px;
+  }
+  .m-additional-info {
+    background-color: #73c400;
+    padding: 15px 0;
+  }
+  .additional-info-wrap {
+    padding-top: 30px;
+    height: auto;
+    padding-bottom: 40px;
+    background: url(../img/bg-additional-info-round.png) left bottom no-repeat, url(../img/bg-additional-info-cloud.png) 0 0 no-repeat;
+    background-size: auto 100%, 100% auto;
+  }
+  .m-form h3 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 30px;
+  }
+  .map-contacts {
+    margin-left: 15px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .h-body h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+  .h-subtitle {
+    font-size: 26px;
+    margin-bottom: 55px;
+  }
+  .m-map {
+    height: 700px;
   }
 }
 @media only screen and (max-width: 600px) {
+  .h-call {
+    font-size: 16px;
+  }
+  .h-form p {
+    font-size: 24px;
+    margin-bottom: 23px;
+  }
+  .information-wrap {
+    padding-top: 50px;
+  }
   .doubt-item {
     font-size: 20px;
     font-weight: bold;
@@ -219,8 +601,101 @@
   .s-hygiene-text {
     padding-bottom: 20px;
   }
+  .m-doctors h3 {
+    font-size: 28px;
+  }
+  .doctor-name {
+    font-size: 24px;
+  }
+  .doctor-post {
+    font-size: 18px;
+  }
+  .additional-info-wrap {
+    padding-top: 30px;
+    height: auto;
+    padding-bottom: 40px;
+    background: none;
+  }
+  .m-additional-block {
+    margin-left: 0;
+    width: 100%;
+  }
+  .additional-text {
+    font-size: 20px;
+    padding-bottom: 25px;
+  }
+  .additional-list {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .results-img {
+    margin-top: 15px;
+    width: 100%;
+  }
+  .results-name-wrap {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .map-contacts {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .h-call {
+    display: none;
+  }
+  .h-body h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+  }
+  .h-subtitle {
+    font-size: 24px;
+    margin-bottom: 45px;
+  }
+  #h-form-top input[type="submit"] {
+    font-size: 20px;
+  }
+  .information-wrap {
+    padding-top: 40px;
+  }
+  .main-doctor-img {
+    width: 100%;
+  }
+  .main-doctor-img img {
+    width: 280px;
+    display: block;
+    margin: 0 auto;
+  }
+  .clear-m-doc-xs {
+    clear: both;
+  }
+  .doctor-name {
+    font-size: 24px;
+    text-align: center;
+  }
+  .doctor-post {
+    font-size: 18px;
+    text-align: center;
+  }
+  .m-gallery-clinic h3 {
+    font-size: 30px;
+  }
+  .contacts-address {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
 }
 @media only screen and (max-width: 480px) {
+  .h-form p {
+    font-size: 20px;
+    margin-bottom: 23px;
+  }
+  .information-text {
+    font-size: 16px;
+  }
   .doubt-dream {
     font-size: 30px;
   }
@@ -238,12 +713,92 @@
     padding-left: 70px;
     width: 100%;
   }
+  .clear-i-doc-xs {
+    clear: both;
+  }
+  .doctor-img {
+    width: 100%;
+  }
+  .doctor-img img {
+    width: 280px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+  }
+  .doctor-item {
+    text-align: center;
+  }
+  .m-results h3 {
+    font-size: 30px;
+  }
 }
 @media only screen and (max-width: 400px) {
+  .btn-application {
+    margin-left: 10px;
+  }
+  .h-body {
+    padding-top: 30px;
+  }
+  .h-body h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
+  .h-subtitle {
+    font-size: 20px;
+    margin-bottom: 45px;
+  }
+  .h-form p {
+    font-size: 18px;
+    margin-bottom: 23px;
+  }
+  #h-form-top input[type="submit"] {
+    font-size: 18px;
+  }
+  .information-wrap {
+    padding-top: 40px;
+  }
+  .information-wrap {
+    padding-top: 40px;
+    padding-left: 120px;
+  }
   .calm-advantage {
     font-size: 28px;
   }
   .services-title h4 {
     font-size: 28px;
+  }
+  .m-advantages h3 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 26px;
+  }
+  .process-item-1:after,
+  .process-item-2:after,
+  .process-item-3:after,
+  .process-item-4:after,
+  .process-item-5:after,
+  .process-item-6:after {
+    display: none;
+  }
+  .process-item-1:before,
+  .process-item-2:before,
+  .process-item-3:before,
+  .process-item-4:before,
+  .process-item-5:before,
+  .process-item-6:before {
+    left: -90px;
+  }
+  .process-item,
+  .process-last-item {
+    font-size: 18px;
+    padding-top: 20px;
+    padding-left: 90px;
+    height: 120px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  #h-form-top input[type="submit"] {
+    font-size: 16px;
   }
 }

@@ -20,21 +20,130 @@ h5 {
 header {
   position: relative;
 }
+/* Hamburger Button */
+.menu-wrap {
+  background-color: #73c400;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 350px;
+  margin-left: -350px;
+  font-size: 13px;
+  overflow: auto;
+  -webkit-transition: .25s;
+  transition: .25s;
+  z-index: 100;
+  padding: 0 20px 50px 40px;
+}
+.menu-show {
+  margin-left: 0;
+  -webkit-box-shadow: 4px 2px 15px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 4px 2px 15px 1px rgba(0, 0, 0, 0.3);
+}
+.menu-sidebar {
+  margin-bottom: 50px;
+  position: relative;
+}
+.menu-sidebar .menu-arrow {
+  position: relative;
+}
+.menu-sidebar .menu-arrow:before {
+  position: absolute;
+  background: url(../img/menu-arrow.svg) 0 0 no-repeat;
+  background-size: cover;
+  right: -18px;
+  top: 7px;
+  content: "";
+  width: 10px;
+  height: 6px;
+}
+.menu-sidebar a {
+  text-decoration: none;
+  font-family: 'RobotoLight', sans-serif;
+}
+.menu-sidebar li {
+  padding-top: 15px;
+}
+.menu-sidebar li ul li {
+  padding-left: 20px;
+}
+.menu-sidebar li > a {
+  color: #fff;
+  font-size: 16px;
+  position: relative;
+}
+.menu-sidebar .special {
+  font-weight: bold;
+}
+.toggle-button {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  -webkit-transition: .25s;
+  transition: .25s;
+  z-index: 115;
+  background: rgba(115, 196, 0, 0.9);
+}
+.toggle-button:hover {
+  cursor: pointer;
+}
+.toggle-button .menu-bar {
+  border-top: 4px solid #fff;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  position: absolute;
+  width: 26px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+.toggle-button .menu-bar-top {
+  top: 9px;
+}
+.toggle-button .menu-bar-middle {
+  top: 18px;
+}
+.toggle-button .menu-bar-bottom {
+  top: 27px;
+}
+.button-open .menu-bar-top {
+  -webkit-transform: rotate(45deg) translate(5px, 8px);
+      -ms-transform: rotate(45deg) translate(5px, 8px);
+          transform: rotate(45deg) translate(5px, 8px);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+.button-open .menu-bar-middle {
+  -webkit-transform: translate(230px);
+      -ms-transform: translate(230px);
+          transform: translate(230px);
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+  opacity: 0;
+}
+.button-open .menu-bar-bottom {
+  -webkit-transform: rotate(-45deg) translate(5px, -7px);
+      -ms-transform: rotate(-45deg) translate(5px, -7px);
+          transform: rotate(-45deg) translate(5px, -7px);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+/* end Hamburger Button */
 .h-head {
-  padding: 26px 0;
+  padding: 15px 0 10px;
   vertical-align: middle;
 }
-.logo {
+.h-logo {
   float: left;
-  background: url(../img/logo.png) 0 0 no-repeat;
-  background-size: cover;
+}
+.h-logo img {
   width: 200px;
-  height: 84px;
 }
 .h-advantage {
   float: left;
   margin-top: 16px;
-  padding: 0 5px 0 30px;
+  margin-left: 30px;
+  width: 310px;
 }
 .btn-registration {
   color: #425058;
@@ -42,7 +151,7 @@ header {
   -webkit-border-radius: 20px;
           border-radius: 20px;
   text-align: center;
-  width: 100%;
+  width: 180px;
   height: 38px;
   line-height: 38px;
   vertical-align: middle;
@@ -51,10 +160,11 @@ header {
   margin-top: 16px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  float: right;
 }
-.btn-registration:focus,
-.btn-registration:hover {
-  color: #425058;
+.btn-registration img {
+  display: none;
+  width: 20px;
 }
 .btn-application {
   color: #fff;
@@ -62,15 +172,25 @@ header {
   -webkit-border-radius: 20px;
           border-radius: 20px;
   text-align: center;
-  width: 100%;
+  width: 180px;
   height: 38px;
   line-height: 38px;
   vertical-align: middle;
   font-size: 18px;
   font-weight: bold;
   margin-top: 16px;
+  margin-left: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  float: right;
+}
+.btn-application img {
+  display: none;
+  width: 25px;
+}
+.btn-registration:focus,
+.btn-registration:hover {
+  color: #425058;
 }
 .btn-application:focus,
 .btn-application:hover {
@@ -80,9 +200,12 @@ header {
   background: #79ce00;
 }
 .h-call {
+  float: right;
   margin-top: 16px;
+  margin-left: 20px;
   font-size: 18px;
   font-weight: bold;
+  text-align: right;
 }
 .h-body {
   position: relative;
@@ -90,7 +213,6 @@ header {
   padding-bottom: 25px;
   background: #fff url(../img/bg-main-header.jpg) center top no-repeat;
   background-size: auto 100%;
-  margin-bottom: 300px;
 }
 .main-menu {
   position: absolute;
@@ -101,7 +223,8 @@ header {
   font-weight: bold;
 }
 .main-menu menu {
-  padding: 42px 110px;
+  padding: 40px 110px;
+  overflow: hidden;
 }
 .main-menu menu > li {
   float: left;
@@ -111,7 +234,7 @@ header {
 .main-menu menu > li:first-child {
   margin-left: 0;
 }
-.main-menu menu > li:last-child {
+.main-menu menu > li:last-of-type {
   margin-left: 0;
   float: right;
 }
@@ -143,14 +266,20 @@ header {
   width: 10px;
   height: 6px;
 }
+.menu-services,
+.menu-info {
+  position: relative;
+}
 .menu-services > ul,
 .menu-info > ul {
+  display: none;
   position: absolute;
-  top: 100%;
+  width: 310px;
+  left: -35px;
+  top: 60px;
   z-index: 15;
   background: #fff;
   padding: 48px 35px;
-  margin-left: -35px;
   -webkit-box-shadow: 0 0 21px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 21px rgba(0, 0, 0, 0.3);
 }
@@ -166,20 +295,13 @@ header {
   width: 0;
   height: 0;
 }
-.services-list,
-.info-list {
-  display: none;
-}
-.services-list li,
-.info-list li {
+.main-menu-list li {
   margin-top: 15px;
 }
-.services-list li:first-child,
-.info-list li:first-child {
+.main-menu-list li:first-child {
   margin-top: 0;
 }
-.services-list a:hover,
-.info-list a:hover {
+.main-menu-list a:hover {
   color: #73c400;
   text-decoration: underline;
 }
@@ -231,12 +353,18 @@ header {
   width: 110px;
   height: 110px;
 }
+.h-form-pos {
+  position: relative;
+}
 .h-form {
   background: rgba(255, 102, 0, 0.81);
   padding: 35px 40px 30px;
   -webkit-border-radius: 16px;
           border-radius: 16px;
   position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
 }
 .h-form p {
   font-size: 26px;
@@ -253,6 +381,7 @@ header {
           border-radius: 10px;
   margin-bottom: 10px;
   padding: 0 15px;
+  color: #425058;
 }
 #h-form-top input[type="submit"] {
   width: 100%;
@@ -276,6 +405,32 @@ header {
 #h-form-top input[type="email"]:focus,
 #h-form-top input[type="submit"]:focus {
   outline: none;
+}
+.h-information {
+  padding: 15px 0 20px;
+  height: 325px;
+  background: #fff;
+  color: #fff;
+  position: relative;
+}
+.information-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 80px;
+  padding-left: 290px;
+  height: 290px;
+  width: 720px;
+  z-index: 20;
+  background: url(../img/bg-additional-info-round.png) left bottom no-repeat, url(../img/bg-information-cloud.png) 120px 0px no-repeat;
+  background-size: auto 100%, auto 100%;
+}
+.information-text {
+  font-size: 20px;
+  width: 290px;
+}
+.information-text span {
+  font-weight: bold;
 }
 .m-doubt {
   background: url(../img/bg-m-doubt-g.png) center bottom no-repeat, url(../img/bg-m-doubt.jpg) center bottom no-repeat;
@@ -461,11 +616,6 @@ header {
 .s-hygiene-text span {
   font-weight: bold;
 }
-.s-block-last {
-  min-width: 500px;
-  -webkit-box-sizing: padding-box;
-          box-sizing: padding-box;
-}
 .s-equipment {
   margin-top: 70px;
 }
@@ -475,11 +625,6 @@ header {
 .logo-unitek,
 .logo-invisdling,
 .logo-invisdling-teen {
-  /*display: block;
-	background: url(../img/logo-unitek.png) 0 0 no-repeat;
-	background-size: cover;
-	width: 255px;
-	height: 52px;*/
   width: 100%;
   margin-top: 5px;
 }
@@ -533,12 +678,14 @@ header {
 .main-doctor-info p + p {
   margin-top: 22px;
 }
-.doctor-name {
+.doctor-name,
+.doctor-i-name {
   color: #73c400;
   font-size: 30px;
   font-weight: bold;
 }
-.doctor-post {
+.doctor-post,
+.doctor-i-post {
   font-size: 20px;
   font-weight: bold;
 }
@@ -550,7 +697,7 @@ header {
   background: #73c400;
   -webkit-border-radius: 15px;
           border-radius: 15px;
-  padding: 32px 10px 32px 132px;
+  padding: 32px 25px 32px 132px;
   font-size: 20px;
   color: #fff;
   position: relative;
@@ -572,10 +719,15 @@ header {
   margin-top: 40px;
   text-align: center;
 }
-.doctor-item .doctor-name {
+.doctor-item img {
+  width: 200px;
+}
+.doctor-name,
+.doctor-i-name {
   margin-top: 15px;
 }
-.doctor-item .doctor-post {
+.doctor-post,
+.doctor-i-post {
   margin-top: 20px;
 }
 .m-certificates {
@@ -607,7 +759,7 @@ header {
 }
 .m-advantages ul {
   background: #fff;
-  padding: 50px 0 40px 25px;
+  padding: 50px 20px 40px 25px;
 }
 .m-advantages li {
   padding-left: 70px;
@@ -648,6 +800,7 @@ header {
   vertical-align: middle;
   display: table-cell;
   height: 112px;
+  padding: 0 15px;
 }
 .advantages-title h4 {
   color: #fff;
@@ -672,11 +825,13 @@ header {
 }
 .results-name-item {
   display: table;
+  width: 100%;
+  padding-right: 23px;
 }
 .results-name-link {
   display: table-cell;
   vertical-align: middle;
-  width: 220px;
+  width: 100%;
   height: 46px;
   padding-left: 15px;
   background: #fff;
@@ -711,29 +866,20 @@ header {
   padding-top: 26px;
   padding-bottom: 26px;
 }
-.results-diagnosis-list {
-  display: inline;
-}
-.results-diagnosis-list strong {
+.results-diagnosis strong {
   font-weight: bold;
 }
-.results-diagnosis-item-active {
-  display: inline;
-}
-.results-diagnosis-item {
-  display: none;
-}
-.results-works-list {
+.results-works {
   margin-top: 40px;
 }
-.results-works-item li {
+.results-works li {
   padding-left: 35px;
   position: relative;
 }
-.results-works-item li + li {
+.results-works li + li {
   margin-top: 15px;
 }
-.results-works-item li:after {
+.results-works li:after {
   position: absolute;
   background: url(../img/i-results-v.svg) 0 0 no-repeat;
   background-size: cover;
@@ -792,6 +938,15 @@ header {
   bottom: 0;
   left: 0;
   margin: auto;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+.gallery-clinic-link img:hover {
+  -webkit-transform: scale(1.1, 1.1);
+      -ms-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
 }
 .m-process {
   padding: 60px 0 85px;
@@ -960,7 +1115,7 @@ header {
   padding-top: 81px;
   height: 290px;
   background: url(../img/bg-additional-info-round.png) left bottom no-repeat, url(../img/bg-additional-info-cloud.png) 0 0 no-repeat;
-  background-size: 285px 285px, 100%;
+  background-size: auto 100%, 100% auto;
 }
 .additional-text {
   font-size: 20px;
@@ -1007,6 +1162,7 @@ header {
           border-radius: 10px;
   margin-bottom: 10px;
   padding: 0 15px;
+  color: #425058;
 }
 #m-form-bottom input[type="submit"] {
   width: 100%;
@@ -1134,9 +1290,7 @@ header {
   height: 43px;
 }
 .map-gis2 {
-  overflow: hidden;
-  text-align: center;
-}
-.map-gis2 img {
   height: 100%;
+  background: url(../img/m-map.jpg) center no-repeat;
+  background-size: cover;
 }

@@ -5,9 +5,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
-	<link rel="shortcut icon" href="img/png/favicon.png">
+	<link rel="shortcut icon" href="">
 	
-	
+	<link href="css/jquery.fancybox.min.css" rel="stylesheet">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/fonts.css">
@@ -16,29 +16,75 @@
 </head>
 <body>
 
-	<header>
+  	<span class="toggle-button visible-xs">
+    	<div class="menu-bar menu-bar-top"></div>
+  		<div class="menu-bar menu-bar-middle"></div>
+   		<div class="menu-bar menu-bar-bottom"></div>
+	</span>
+	<div id="menu_mobile" class="menu-wrap visible-xs">
+	    <div class="menu-sidebar">
+	  
+			<ul>
+		        <li>
+	      			<a href="#0" class="menu-arrow">Услуги</a>
+
+	      			<ul>
+	      				<li><a href="#">Металлические брекеты</a></li>
+	      				<li><a href="#">Керамические брекеты</a></li>
+	      				<li><a href="#">Прозрачные каппы</a></li>
+	      				<li><a href="#">Внутренние брекеты</a></li>
+	      				<li><a href="#">Аппараты для детей</a></li>
+	      				<li><a href="#">Гигиена полости рта</a></li>
+	      				<li><a href="#">Отбеливание зубов</a></li>
+	      			</ul>
+	      		</li>
+	      		<li><a href="#">О нас</a></li>
+	      		<li><a href="#">Отзывы и результаты</a></li>
+	      		<li><a href="#">Цены</a></li>
+	      		<li>
+	      			<a href="#" class="menu-arrow">Информация</a>
+	      			<ul>
+	      				<li><a href="#">Металлические брекеты</a></li>
+	      				<li><a href="#">Керамические брекеты</a></li>
+	      				<li><a href="#">Прозрачные каппы</a></li>
+	      				<li><a href="#">Внутренние брекеты</a></li>
+	      				<li><a href="#">Аппараты для детей</a></li>
+	      				<li><a href="#">Гигиена полости рта</a></li>
+	      			</ul>
+	      		</li>
+	      		<li><a href="#">Контакты</a></li>
+		    </ul>
+	    </div>
+	</div>
+
+	<header>  
   		<div class="h-head">
 	     <div class="container">
 	        <div class="row">
-	          <div class="col-lg-2">
-	            <a href="#0" class="logo"></a>
-	          </div>
-	          <div class="col-lg-4">
-	            <div class="h-advantage">
+	          <div class="col-sm-12 col-xs-12">
+
+	            <a href="#" class="h-logo">
+	            	<img src="img/logo.png" alt="">
+	            </a>
+
+	            <div class="h-advantage visible-lg">
 	            	<p>Выравнивание зубов и исправление прикуса любой сложности</p>
 	            </div>
-	          </div>
-	          <div class="col-lg-2">
-	            <a href="#0" class="btn-registration">Вход \ Регистрация</a>
-	          </div>
-	          <div class="col-lg-2">
-	            	<a href="#0" class="btn-application">Запись онлайн</a>
-	          </div>
-	          <div class="col-lg-2">
+
 	            <div class="h-call">
 	            	<p>+7 (495) 640-59-31</p>
 	            	<p>+7 (985) 77-55-222</p>
 	            </div>
+
+	            <a href="#0" class="btn-application">
+            		<p>Запись онлайн</p>
+					<img src="img/btn-application.svg" alt="">
+            	</a>
+
+	            <a href="#0" class="btn-registration">
+		            <p>Вход  Регистрация</p>
+		            <img src="img/btn-registration.svg" alt="">
+	            </a>
 	          </div>
 	        </div>
 	      </div>
@@ -48,12 +94,12 @@
 			<div class="main-menu">
 				<div class="container">
 		          <div class="row">
-		        	<div class="col-lg-12">
+		        	<div class="col-lg-12 hidden-xs">
 				      	<menu>
-				      		<li class="menu-services">
-				      			<a href="#0" class="menu-arrow">Услуги</a>
+				      		<li class="main-menu-item menu-services">
+				      			<a href="#" class="main-menu-link menu-arrow">Услуги</a>
 
-				      			<ul class="services-list">
+				      			<ul class="main-menu-list">
 				      				<li><a href="#">Металлические брекеты</a></li>
 				      				<li><a href="#">Керамические брекеты</a></li>
 				      				<li><a href="#">Прозрачные каппы</a></li>
@@ -66,9 +112,9 @@
 				      		<li><a href="#">О нас</a></li>
 				      		<li><a href="#">Отзывы и результаты</a></li>
 				      		<li><a href="#">Цены</a></li>
-				      		<li class="menu-info">
-				      			<a href="#" class="menu-arrow">Информация</a>
-				      			<ul class="info-list">
+				      		<li class="main-menu-item menu-info">
+				      			<a href="#" class="main-menu-link menu-arrow">Информация</a>
+				      			<ul class="main-menu-list">
 				      				<li><a href="#">Металлические брекеты</a></li>
 				      				<li><a href="#">Керамические брекеты</a></li>
 				      				<li><a href="#">Прозрачные каппы</a></li>
@@ -78,59 +124,76 @@
 				      			</ul>
 				      		</li>
 				      		<li><a href="#">Контакты</a></li>
-				      		<div class="clearfix"></div>
 				      	</menu>
 		      		</div>
 		      	  </div>
 	      		</div>
 	      	</div>
-
+			
 	      	<div class="container">
 	      		<div class="row">
-	      			<div class="col-lg-6">
+	      			<div class="col-lg-6 col-md-7 col-sm-9 col-xs-12">
 	      				<h1>Специализированная ортодонтическая клиника <span>«ОртоСмайл»</span></h1>
 	      				<p class="h-subtitle">Превратите мечту об уверенной и яркой улыбке в реальность</p>
 	      			</div>
 	      			<div class="clearfix"></div>
-  					<div class="col-lg-2">
-  						<div class="h-doctor">
-  							<p>С помощью врачей-ортодонтов с 15-летним опытом</p>
-  						</div>
+	      			<div class="col-md-6 col-sm-12 col-xs-12">
+	      			  <div class="row">
+	  					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+	  						<div class="h-doctor">
+	  						  <div class="h-table-cell">
+	  							<p>С помощью врачей-ортодонтов с 15-летним опытом</p>
+	  						  </div>
+	  						</div>
+	  					</div>
+	  					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+	  						<div class="h-people">
+	  						  <div class="h-table-cell">
+	  							<p>Для детей, подростков и взрослых</p>
+	  						  </div>
+	  						</div>
+	  					</div>
+	  					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+	  						<div class="h-hygienist">
+	  						  <div class="h-table-cell">
+	  							<p>С сопровождением гигиениста на весь период лечения</p>
+	  						  </div>
+	  						</div>
+	  					</div>
+	  				  </div>
   					</div>
-  					<div class="col-lg-2">
-  						<div class="h-people">
-  							<p>Для детей, подростков и взрослых</p>
-  						</div>
-  					</div>
-  					<div class="col-lg-2">
-  						<div class="h-hygienist">
-  							<p>С сопровождением гигиениста на весь период лечения</p>
-  						</div>
-  					</div>
-  					<div class="col-lg-offset-1 col-lg-5">
+
+  					<div class="col-lg-offset-1 col-lg-5 col-md-6 col-sm-12 col-xs-12 h-form-pos">
   					  <div class="h-form">
 	      				<form id="h-form-top">
 	      					<p>Запишитесь на консультацию врача-ортодонта прямо сейчас</p>
-	      					<input type="text" name="name" placeholder="Ваше имя"></input>
-	      					<input type="tel" name="phone" placeholder="Ваш телефон"></input>
-	      					<input type="email" name="email" placeholder="Ваш email"></input>
-	      					<input type="submit" value="Получить консультацию"></input>
+	      					<input type="text" name="name" placeholder="Ваше имя" />
+	      					<input type="tel" name="phone" class="form-phone" placeholder="Ваш телефон" >
+	      					<input type="email" name="email" placeholder="Ваш email" />
+	      					<input type="submit" value="Получить консультацию" />
 	      				</form>
 	      			  </div>
 	      			</div>
-	      				<div class="clearfix"></div>
-	      			</div>
+	      			<div class="clearfix"></div>
 	      		</div>
 	      	</div>
       	</div>
-      	<div class="container">
-      		<div class="row">
-      			<div class="col-lg-offset-1 col-lg-5">
-      			</div>
-      		</div>
-      	</div>
-	</header>
 
+      	<div class="h-information">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+					  <div class="information-wrap">
+						<p class="information-text">Пройдите курс лечения в нашей клинике и получите <span>набор «Всё для чистки брекетов» в подарок!</span></p>
+					  </div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</header>
+ 
 	<section class="m-doubt">
 		<div class="container">
       		<div class="row">
@@ -172,13 +235,13 @@
 	<section class="m-services">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="col-sm-12 col-xs-12">
 					<h3>Наши услуги</h3>
 				</div>
 
-				<div class="col-lg-6 col-md-6">
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<div class="row">
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="col-sm-12 col-xs-12">
 							<div class="services-table">
 							  <div class="services-title">
 								<h4>Выравнивание зубов</h4>
@@ -186,7 +249,7 @@
 							</div>
 						</div>
 
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 s-block">
+						<div class="col-sm-12 col-xs-12 s-block">
 						  	<div class="s-block-bg">
 							  	<div class="s-block-img">
 							  		<img src="img/services-metal-braces.jpg" alt="">
@@ -199,7 +262,7 @@
 							</div>
 						</div>
 
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 s-block">
+						<div class="col-sm-12 col-xs-12 s-block">
 						  	<div class="s-block-bg">
 							  	<div class="s-block-img">
 							  		<img src="img/services-ceramic-braces.jpg" alt="">
@@ -212,7 +275,7 @@
 							</div>
 						</div>
 
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 s-block">
+						<div class="col-sm-12 col-xs-12 s-block">
 						  	<div class="s-block-bg">
 							  	<div class="s-block-img">
 							  		<img src="img/services-mouthguard.jpg" alt="">
@@ -225,7 +288,7 @@
 							</div>
 						</div>
 
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 s-block">
+						<div class="col-sm-12 col-xs-12 s-block">
 						  	<div class="s-block-bg">
 							  	<div class="s-block-img">
 							  		<img src="img/services-internal-braces.jpg" alt="">
@@ -238,7 +301,7 @@
 							</div>
 						</div>
 
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 s-block">
+						<div class="col-sm-12 col-xs-12 s-block">
 						  	<div class="s-block-bg">
 							  	<div class="s-block-img">
 							  		<img src="img/services-devices-children.jpg" alt="">
@@ -254,9 +317,9 @@
 					</div>
 				</div>
 
-				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				<div class="col-md-6 col-sm-12 col-xs-12">
 					<div class="row">
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="col-sm-12 col-xs-12">
 							<div class="services-table">
 							  <div class="services-title">
 								<h4>Гигиена полости рта и отбеливание зубов</h4>
@@ -264,7 +327,7 @@
 							</div>
 						</div>
 
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 s-block s-block-hygiene">
+						<div class="col-sm-12 col-xs-12 s-block s-block-hygiene">
 						  	<div class="s-block-bg">
 							  	<div class="s-block-img">
 							  		<img src="img/services-clean.jpg" alt="">
@@ -282,7 +345,7 @@
 							</div>
 						</div>
 
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 s-block s-block-hygiene">
+						<div class="col-sm-12 col-xs-12 s-block s-block-hygiene">
 						  	<div class="s-block-bg">
 							  	<div class="s-block-img">
 							  		<img src="img/services-whitening-teeth.jpg" alt="">
@@ -302,18 +365,18 @@
 					</div>
 				</div>
 
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 s-equipment">
+				<div class="col-sm-12 col-xs-12 s-equipment">
 					<div class="row">
-						<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+						<div class="col-lg-3 col-sm-12 col-xs-12">
 							<p>В работе мы используем только сертифицированную аппаратуру от лидеров рынка:</p>
 						</div>	
-						<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+						<div class="col-md-3 col-sm-4 col-xs-12">
 							<img src="img/logo-unitek.png" alt="" class="logo-unitek">
 						</div>
-						<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+						<div class="col-md-3 col-sm-4 col-xs-12">
 							<img src="img/logo-invisdling.png" alt="" class="logo-invisdling">
 						</div>
-						<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+						<div class="col-md-3 col-sm-4 col-xs-12">
 							<img src="img/logo-invisdling-teen.png" alt="" class="logo-invisdling-teen">
 						</div>
 					</div>
@@ -330,57 +393,67 @@
 	<section class="m-doctors">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-sm-12 col-xs-12">
 					<h3>Кто отвечает за вашу яркую улыбку</h3>
 				</div>
 
-				<div class="col-lg-12 main-doctor">
+				<div class="col-sm-12 col-xs-12 main-doctor">
 					<div class="row">
-						<div class="col-lg-3">
+						<div class="col-lg-3 col-md-4 col-sm-5 main-doctor-img">
 							<img src="img/doc-ryumina.png" alt="">
 						</div>
-						<div class="col-lg-9 main-doctor-info">
+						<div class="clear-m-doc-xs"></div>
+						<div class="col-lg-9 col-md-8 col-sm-7 main-doctor-info">
 							<p class="doctor-name">Рюмина Ольга Алексеевна</p>
 							<p class="doctor-post">Руководитель клиники<br>
 							врач-ортодонт</p>
-							<p>Ортодонтия — одна из сложнейших и интереснейших областей стоматологии. Я стремлюсь достичь совершенства в этом направлении на протяжении 17 лет и нахожусь в постоянном обучении.</p>
-							<p>Такая философия и у наших врачей — все специалисты клиники постоянно учатся, растут и осваивают новые техники, чтобы ваша улыбка была еще ярче и увереннее. В отличие от стоматологических клиник, мы полностью сфокусированы только на ортодонтии.</p>
+							<p class="m-doctor-info-text">Ортодонтия — одна из сложнейших и интереснейших областей стоматологии. Я стремлюсь достичь совершенства в этом направлении на протяжении 17 лет и нахожусь в постоянном обучении.</p>
+							<p class="m-doctor-info-text">Такая философия и у наших врачей — все специалисты клиники постоянно учатся, растут и осваивают новые техники, чтобы ваша улыбка была еще ярче и увереннее. В отличие от стоматологических клиник, мы полностью сфокусированы только на ортодонтии.</p>
 						</div>
 					</div>
 				</div>
 				
-				<div class="col-lg-6 m-doctor-text">
+				<div class="col-sm-6 col-xs-12 m-doctor-text">
 					<p>В «ОртоСмайл» о вас и ваших зубах позаботятся врачи-ортодонты с 15-летним опытом, а весь процесс преображения вашей улыбки мы будем держать под полным контролем.</p>
 				</div>
-				<div class="col-lg-6 m-doctor-text">
+				<div class="col-sm-6 col-xs-12 m-doctor-text">
 					<p>Кроме того, клиника «ОртоСмайл» соответствует государственным и международным нормам, о чём говорят наши лицензии и сертификаты.</p>
 				</div>
 
-				<div class="col-lg-12 ">
+				<div class="col-sm-12 col-xs-12">
 					<div class="doctor-fact">
 						<p>Таким образом, вы полностью защищены как от осложнений, так и от неполного или халатного лечения.</p>
 					</div>
 				</div>
 
-				<div class="col-lg-12 doctors-intro">
+				<div class="col-sm-12 col-xs-12 doctors-intro">
 					<p>Предать вашей улыбке блеск и уверенность мне помогут:</p>
 				</div>
 
-				<div class="col-lg-4 doctor-item">
-					<img src="img/doc-ryumina.png" alt="" class="doctor-img">
-					<p class="doctor-name">Кирьянова Наталья Владимировна</p>
-					<p class="doctor-post">врач-ортодонт</p>
+				<div class="col-sm-4 col-xs-12 doctor-item">
+					<div class="doctor-img">
+					  <img src="img/doc-ryumina.png" alt="">
+					</div>
+					<div class="clear-i-doc-xs"></div>
+					<p class="doctor-i-name">Кирьянова Наталья Владимировна</p>
+					<p class="doctor-i-post">врач-ортодонт</p>
 				</div>
-				<div class="col-lg-4 doctor-item">
-					<img src="img/doc-ryumina.png" alt="" class="doctor-img">
-					<p class="doctor-name">Зверева Н.С</p>
-					<p class="doctor-post">гигиенист</p>
+				<div class="col-sm-4 col-xs-12 doctor-item">
+					<div class="doctor-img">
+					  <img src="img/doc-ryumina.png" alt="">
+					</div>
+					<div class="clear-i-doc-xs"></div>
+					<p class="doctor-i-name">Зверева Н.С</p>
+					<p class="doctor-i-post">гигиенист</p>
 				</div>
-				<div class="col-lg-4 doctor-item">
-					<img src="img/doc-ryumina.png" alt="" class="doctor-img">
-					<p class="doctor-name">Голованова Ю.П.</p>
-					<p class="doctor-post">гигиенист</p>
-				</div>
+				<div class="col-sm-4 col-xs-12 doctor-item">
+					<div class="doctor-img">
+					  <img src="img/doc-ryumina.png" alt="">
+					</div>
+					<div class="clear-i-doc-xs"></div>
+					<p class="doctor-i-name">Голованова Ю.П.</p>
+					<p class="doctor-i-post">гигиенист</p>
+				</div> 
 			</div>
 		</div>
 	</section>
@@ -388,18 +461,18 @@
 	<section class="m-certificates">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-sm-12 col-xs-12">
 					<h3>Лицензии и сертификаты</h3>
 				</div>
-				<div class="col-lg-4 certificates-i">
+				<a href="img/license-1.jpg" data-fancybox="group-certificates" class="fancybox col-sm-4 col-xs-12 certificates-i">
 					<img src="img/license-1.jpg" alt="">
-				</div>
-				<div class="col-lg-4 certificates-i">
+				</a>
+				<a href="img/license-1.jpg" data-fancybox="group-certificates" class="fancybox col-sm-4 col-xs-12 certificates-i">
 					<img src="img/license-1.jpg" alt="">
-				</div>
-				<div class="col-lg-4 certificates-i">
+				</a>
+				<a href="img/license-1.jpg" data-fancybox="group-certificates" class="fancybox col-sm-4 col-xs-12 certificates-i">
 					<img src="img/license-1.jpg" alt="">
-				</div>
+				</a>
 			</div>
 		</div>
 	</section>
@@ -408,11 +481,11 @@
 	<section class="m-advantages">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-sm-12 col-xs-12">
 					<h3>Чем мы отличаемся от стоматологических клиник</h3>
 				</div>
 
-				<div class="col-lg-6">
+				<div class="col-sm-6 col-xs-12">
 					<div class="advantages-table">
 					  <div class="advantages-title">
 						<h4>Стоматологические клиники</h4>
@@ -428,7 +501,7 @@
 					</ul>
 				</div>
 
-				<div class="col-lg-6">
+				<div class="col-sm-6 col-xs-12">
 					<div class="advantages-table">
 					  <div class="advantages-title">
 						<h4>Ортодонтическая клиника <br> 
@@ -452,10 +525,10 @@
 	<section class="m-results">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-sm-12 col-xs-12">
 					<h3>Посмотрите на наши результаты</h3>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 results-name-wrap">
 					<ul class="results-name-list">
 						<li class="results-name-item">
 							<a href="#" class="results-name-link active">Яна</a>
@@ -474,32 +547,22 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-lg-6">
+
+				<div class="col-lg-6 col-md-6 col-sm-8 col-xs-8 results-img">
 					<img src="img/results-jan.jpg" alt="">
 				</div>
-				<div class="col-lg-3 results-info">
-					<p class="results-diagnosis-list"><strong>Диагноз:</strong>
-						<p class="results-diagnosis-item-active">дистальная окклюзия (верхние зубы выступают вперед), сужение верхнего зубного ряда.</p>
-						<p class="results-diagnosis-item">дистальная окклюзия (верхние зубы выступают вперед), сужение верхнего зубного ряда.</p>
-						<p class="results-diagnosis-item">дистальная окклюзия (верхние зубы выступают вперед), сужение верхнего зубного ряда.</p>
-						<p class="results-diagnosis-item">дистальная окклюзия (верхние зубы выступают вперед), сужение верхнего зубного ряда.</p>
-						<p class="results-diagnosis-item">дистальная окклюзия (верхние зубы выступают вперед), сужение верхнего зубного ряда.</p>
+
+				<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 results-info">
+					<p class="results-diagnosis"><strong>Диагноз:</strong> дистальная окклюзия (верхние зубы выступают вперед), сужение верхнего зубного ряда.
 					</p>
-					<ul class="results-works-list">
-						<li class="results-works-item">
-							<ul>
-								<li>Лечение без удаления зубов</li>
-								<li>Керамические брекеты 3M Unitek</li>
-								<li>Срок ношения брекетов — 1,5 года</li>
-							</ul>
-						</li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
+						<ul class="results-works">
+							<li>Лечение без удаления зубов</li>
+							<li>Керамические брекеты 3M Unitek</li>
+							<li>Срок ношения брекетов — 1,5 года</li>
+						</ul>
 					
 				</div>
+
 
 			</div>
 		</div>
@@ -508,31 +571,31 @@
 	<section class="m-gallery-clinic">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-sm-12 col-xs-12">
 					<h3>Посмотрите на нашу клинику поближе</h3>
 					<div class="wrapsocial-inst">
 						<a href="#" class="i-social-inst">@ortodont.moskva</a>
 					</div>
 				</div>
-				<div class="col-lg-12 gallery-clinic-list">
+				<div class="col-sm-12 col-xs-12 gallery-clinic-list">
 				  <div class="row">
-					<div class="col-lg-3 gallery-clinic-item">
-						<a href="" class="gallery-clinic-link">
+					<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 gallery-clinic-item">
+						<a href="img/gallery-photo-1.jpg" data-fancybox="group-m-gallery" class="fancybox gallery-clinic-link">
 							<img src="img/gallery-photo-1.jpg" alt="">
 						</a>
 					</div>
-					<div class="col-lg-3 gallery-clinic-item">
-						<a href="" class="gallery-clinic-link">
+					<div class="col-md-3 col-sm-6 col-xs-12 gallery-clinic-item">
+						<a href="img/gallery-photo-2.jpg" data-fancybox="group-m-gallery" class="fancybox gallery-clinic-link">
 							<img src="img/gallery-photo-2.jpg" alt="">
 						</a>
 					</div>
-					<div class="col-lg-3 gallery-clinic-item">
-						<a href="" class="gallery-clinic-link">
+					<div class="col-md-3 col-sm-6 col-xs-12 gallery-clinic-item">
+						<a href="img/gallery-photo-1.jpg" data-fancybox="group-m-gallery" class="fancybox gallery-clinic-link">
 							<img src="img/gallery-photo-1.jpg" alt="">
 						</a>
 					</div>
-					<div class="col-lg-3 gallery-clinic-item">
-						<a href="" class="gallery-clinic-link">
+					<div class="col-md-3 col-sm-6 col-xs-12 gallery-clinic-item">
+						<a href="img/gallery-photo-2.jpg" data-fancybox="group-m-gallery" class="fancybox gallery-clinic-link">
 							<img src="img/gallery-photo-2.jpg" alt="">
 						</a>
 					</div>
@@ -545,38 +608,38 @@
 	<section class="m-process">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-sm-12 col-xs-12">
 					<h3>Лицензии и сертификаты</h3>
 				</div>
-				<div class="col-lg-12 process-list">
+				<div class="col-sm-12 col-xs-12 process-list">
 				  <div class="row">
 
-					<div class="col-lg-5">
+					<div class="col-md-5 col-sm-6 col-xs-12">
 						<div class="process-item">
 							<p class="process-item-1">Вы проходите консультацию у врача-ортодонта в нашей клинике</p>
 						</div>
 					</div>
-					<div class="col-lg-offset-2 col-lg-5">
+					<div class="col-md-offset-2 col-md-5 col-sm-offset-0 col-sm-6 col-xs-12">
 						<div class="process-item">
 							<p class="process-item-2">Проводим урок гигиены и профессиональную чистку</p>
 						</div>
 					</div>
-					<div class="col-lg-5">
+					<div class="col-md-5 col-sm-6 col-xs-12">
 						<div class="process-item">
 							<p class="process-item-3">Ежемесячно осматриваем вас и контролируем процесс лечения</p>
 						</div>
 					</div>
-					<div class="col-lg-offset-2 col-lg-5">
+					<div class="col-md-offset-2 col-md-5 col-sm-offset-0 col-sm-6 col-xs-12">
 						<div class="process-item">
 							<p class="process-item-4">Мы проводим диагностику и предлагаем план лечения</p>
 						</div>
 					</div>
-					<div class="col-lg-5">
+					<div class="col-md-5 col-sm-6 col-xs-12">
 						<div class="process-last-item">
 							<p class="process-item-5">Фиксируем аппаратуру на ваших зубах</p>
 						</div>
 					</div>
-					<div class="col-lg-offset-2 col-lg-5">
+					<div class="col-md-offset-2 col-md-5 col-sm-offset-0 col-sm-6 col-xs-12">
 						<div class="process-last-item">
 							<p class="process-item-6">Закрепляем ваш результат во время ретенционного (восстановительного) периода</p>
 						</div>
@@ -591,9 +654,9 @@
 	<section class="m-additional-info">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 additional-info-wrap">
+				<div class="col-sm-12 col-xs-12 additional-info-wrap">
 					<div class="row">
-						<div class="col-lg-offset-3 col-lg-9">
+						<div class="col-md-offset-3 col-md-9 col-sm-offset-2 col-sm-10 col-xs-offset-3 col-xs-9 m-additional-block">
 							<p class="additional-text">При записи на курс лечения в клинике «ОртоСмайл» вы также получите:</p>
 							<ul class="additional-list">
 								<li>бесплатное сопровождение гигиениста на весь период лечения</li>
@@ -603,7 +666,6 @@
 						</div>
 					</div>
 				</div>
-				</div>
 			</div>
 		</div>
 	</section>
@@ -611,24 +673,24 @@
 	<section class="m-form">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
+				<div class="col-sm-12 col-xs-12">
 					<h3>Запишитесь на консультацию врача-ортодонта прямо сейчас:</h3>
 				</div>
-				<div class="col-lg-12">
+				<div class="col-sm-12 col-xs-12">
 				  <form id="m-form-bottom">
 					<div class="row">
-						<div class="col-lg-4">
-							<input type="text" name="name" placeholder="Ваше имя"></input>
+						<div class="col-md-offset-0 col-md-4 col-sm-offset-1 col-sm-10 col-xs-12">
+							<input type="text" name="name" placeholder="Ваше имя"/>
 						</div>
-						<div class="col-lg-4">
-							<input type="tel" name="phone" placeholder="Ваш телефон"></input>
+						<div class="col-md-offset-0 col-md-4 col-sm-offset-1 col-sm-10 col-xs-12">
+							<input type="tel" name="phone" class="form-phone" placeholder="Ваш телефон"/>
 						</div>
-						<div class="col-lg-4">
-							<input type="email" name="email" placeholder="Ваш email"></input>
+						<div class="col-md-offset-0 col-md-4 col-sm-offset-1 col-sm-10 col-xs-12">
+							<input type="email" name="email" placeholder="Ваш email"/>
 						</div>
 						
-						<div class="col-lg-offset-4 col-lg-4">
-							<input type="submit" value="Получить консультацию"></input>
+						<div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-12">
+							<input type="submit" value="Получить консультацию"/>
 						</div>
 					</div>
 				  </form>
@@ -640,23 +702,23 @@
 	<section class="m-details-services">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-2">
+				<div class="col-md-2 col-sm-12 col-xs-12">
 					<p class="details-text">Или узнайте:</p>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
 					<a href="#" class="btn-details">Подробнее об услугах</a>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-5 col-sm-6 col-xs-12">
 					<a href="#" class="btn-details">О наших ценах</a>
 				</div>
 			</div>
 		</div>
-	</section>v
+	</section>
 
 	<footer class="m-map">
 		<div class="container m-map-container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-12">
+				<div class="col-sm-12 col-xs-12">
 					<div class="map-contacts">
 						<p class="contacts-address">г. Москва, ул. Братиславская, д. 6, подъезд 2, этаж 6, офис 109</p>
 						<div class="contacts-phone">
@@ -675,15 +737,15 @@
 			</div>
 		</div>
 		
-		<div class="map-gis2">
-			<img src="img/m-map.jpg" alt="">
-		</div>
+		<div class="map-gis2"></div>
 		
 	</footer>
 
 
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>

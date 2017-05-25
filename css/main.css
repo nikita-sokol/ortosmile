@@ -824,6 +824,12 @@ header {
   padding-top: 26px;
   padding-bottom: 26px;
 }
+.results-img-item {
+  display: none;
+}
+.results-img .active {
+  display: inline-block;
+}
 .results-diagnosis-text strong {
   font-weight: bold;
 }

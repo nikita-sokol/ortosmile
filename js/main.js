@@ -93,12 +93,12 @@ $(document).ready(function () {
     e.preventDefault();
 
     var  $this = $(this),
-         wrap = $(this).closest(".m-results"),
-         item = $(this).closest(".results-name-item"),
+         item = $this.closest(".results-name-item"),
          list = $(".results-name-list"),
          links = list.find(".results-name-link");
 
     if   (!$this.hasClass('active')) {
+
          links.removeClass('active');
          $this.addClass('active');
     } 
@@ -111,12 +111,19 @@ $(document).ready(function () {
 
          diagnosisText.html("<strong>Диагноз: </strong>" + textItem);
 
-   var   worksText = $('.results-works-text'), 
+    var  worksText = $('.results-works-text'), 
          contentWorksItem = $('.results-works-item'),
          itemWorksFilter = contentWorksItem.filter('.results-works-'+itemPosition),
          textWorksItem = itemWorksFilter.html();
 
          worksText.html(textWorksItem);
+//---------------------
+    var  itemResults = $(".results-img-item");
+
+         itemResults.filter('.results-img-'+itemPosition)
+         .addClass('active')
+         .siblings()
+         .removeClass('active');
   });
 
 });

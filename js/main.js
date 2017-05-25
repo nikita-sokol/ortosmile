@@ -117,7 +117,7 @@ $(document).ready(function () {
          textWorksItem = itemWorksFilter.html();
 
          worksText.html(textWorksItem);
-//---------------------
+
     var  itemResults = $(".results-img-item");
 
          itemResults.filter('.results-img-'+itemPosition)
@@ -137,6 +137,7 @@ $(document).ready(function () {
              });
 
              DG.marker([55.66453963191137, 37.75214331054688]).addTo(map);
+
          });
 
 

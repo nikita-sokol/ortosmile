@@ -136,20 +136,9 @@ $(document).ready(function () {
                  zoom: 16
              });
 
-             if (browserMinWidth > 1200) {
-                  map.center = [56.66963191137, 40.75214331054688];
-               }
-
              DG.marker([55.66453963191137, 37.75214331054688]).addTo(map);
          });
 
-   //maps - scrolloff
-   $('#map').addClass('scrolloff');
-    $('#overlay').on('click', function () {
-        $('#map').removeClass('scrolloff'); 
-    });
-    $("#map").mouseleave(function () {
-        $('#map1').addClass('scrolloff'); 
-    });
+
 
 });

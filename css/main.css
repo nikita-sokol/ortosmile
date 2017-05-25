@@ -1201,6 +1201,7 @@ header {
   position: absolute;
   left: 0;
   top: 88px;
+  z-index: 15;
 }
 .contacts-address {
   font-size: 24px;
@@ -1260,6 +1261,7 @@ header {
   width: 43px;
   height: 43px;
 }
-.map-gis2 iframe {
-  border: 0px solid #a3a3a3 !important;
+#map {
+  width: 100%;
+  height: 530px;
 }

@@ -556,8 +556,8 @@
     font-size: 26px;
     margin-bottom: 55px;
   }
-  .map-gis2 iframe {
-    height: 700px !important;
+  #map {
+    height: 700px;
   }
 }
 @media only screen and (max-width: 600px) {

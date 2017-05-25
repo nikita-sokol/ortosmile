@@ -1190,9 +1190,6 @@ header {
 .btn-details:hover {
   background: #79ce00;
 }
-.m-map {
-  height: 524px;
-}
 .m-map-container {
   position: relative;
 }
@@ -1263,8 +1260,6 @@ header {
   width: 43px;
   height: 43px;
 }
-.map-gis2 {
-  height: 100%;
-  background: url(../img/m-map.jpg) center no-repeat;
-  background-size: cover;
+.map-gis2 iframe {
+  border: 0px solid #a3a3a3 !important;
 }

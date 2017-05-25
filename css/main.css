@@ -826,6 +826,10 @@ header {
 }
 .results-img-item {
   display: none;
+  width: 100%;
+}
+.results-img-item img {
+  width: 100%;
 }
 .results-img .active {
   display: inline-block;

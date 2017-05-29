@@ -117,7 +117,7 @@ $(document).ready(function () {
          textWorksItem = itemWorksFilter.html();
 
          worksText.html(textWorksItem);
-
+//---------------------
     var  itemResults = $(".results-img-item");
 
          itemResults.filter('.results-img-'+itemPosition)
@@ -136,10 +136,51 @@ $(document).ready(function () {
                  zoom: 16
              });
 
+/*console.log(else if);
+         if ($(window).width() < 1200) {
+            map.setView([55.66453963191137, 37.75014331054688], 16);
+         } else if ($(window).width() < 992) {
+            map.setView([55.66453963191137, 39.75014331054688], 16);
+         } else {
+            map.setView([55.66453963191137, 39.75014331054688], 16);
+         } */
+
+         if ($(window).width() < 1200) {
+            map.setView([55.66453963191137, 37.75014331054688], 16);
+         } else if ($(window).width() < 992) {
+            map.setView([55.66453963191137, 39.75014331054688], 16);
+         } else {
+            map.setView([55.66453963191137, 39.75014331054688], 16);
+         }
+
+            // map.disableScrollZoom();
+
              DG.marker([55.66453963191137, 37.75214331054688]).addTo(map);
 
+             
          });
 
+$(window).resize(function() {
+    
 
+    if ($(window).width() < 1200) {
+                 map.setView([55.66453963191137, 37.75014331054688], 16);
+               } 
+});
+
+   /*else if ($(window).width() < 992) {
+            map.setView([55.66453963191137, 40.000], 16);
+         } else {
+            map.setView([55.66453963191137, 37.75014331054688], 16);
+         }*/
+
+   //maps - scrolloff
+  /* $('#map').addClass('scrolloff');
+    $('#overlay').on('click', function () {
+        $('#map').removeClass('scrolloff'); 
+    });
+    $("#map").mouseleave(function () {
+        $('#map1').addClass('scrolloff'); 
+    });*/
 
 });

@@ -30,3 +30,14 @@ url('../fonts/proxima/ProximaNova-Bold.svg#webfont') format('svg');
 font-weight: bold;
 font-style: normal;
 }
+
+@font-face{
+font-family: 'ProximaNova-Bold-Italic';
+src: url('../fonts/proxima/ProximaNova-Bold-Italic.eot');
+src: url('../fonts/proxima/ProximaNova-Bold-Italic.eot?iefix') format('eot'),
+url('../fonts/proxima/ProximaNova-Bold-Italic.woff') format('woff'),
+url('../fonts/proxima/ProximaNova-Bold-Italic.ttf') format('truetype'),
+url('../fonts/proxima/ProximaNova-Bold-Italic.svg#webfont') format('svg');
+font-weight: bold;
+font-style: italic;
+}

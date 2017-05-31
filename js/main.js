@@ -87,6 +87,37 @@ $(document).ready(function () {
       }
    });
     
+    //faq-block
+    $('.btn-faq-collapse').on('click', function (e) {
+      e.preventDefault();
+
+      var  $this = $(this),
+           wrap = $this.closest(".faq-block-wrap"),
+           deploy = wrap.find(".btn-faq-deploy"),
+           question = wrap.find(".faq-question")
+           answer = wrap.find(".answer-block");
+
+      $this.removeClass('active');
+      deploy.addClass('active');
+      answer.addClass('active-collapse');
+      question.addClass('active-collapse-text');
+    });
+
+    $('.btn-faq-deploy').on('click', function (e) {
+      e.preventDefault();
+
+      var  $this = $(this),
+           wrap = $this.closest(".faq-block-wrap"),
+           collapse = wrap.find(".btn-faq-collapse"),
+           answer = wrap.find(".answer-block"),
+           question = wrap.find(".faq-question");
+
+      $this.removeClass('active');
+      collapse.addClass('active');
+      answer.removeClass('active-collapse');
+      question.removeClass('active-collapse-text');
+    });
+
 
     //m-results
     $('.results-name-link').on('click', function (e) {
@@ -117,7 +148,7 @@ $(document).ready(function () {
          textWorksItem = itemWorksFilter.html();
 
          worksText.html(textWorksItem);
-//---------------------
+
     var  itemResults = $(".results-img-item");
 
          itemResults.filter('.results-img-'+itemPosition)

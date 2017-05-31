@@ -1729,6 +1729,17 @@ header {
 .faq-block-2 {
   background: #f6f6f6;
 }
+.active-collapse {
+  overflow: hidden;
+  height: 0px;
+}
+.active-collapse-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-right: 10px;
+  height: 24px;
+}
 .question-name {
   font-size: 30px;
   color: #73c400;
@@ -1776,17 +1787,20 @@ header {
 .faq-answe {
   margin-top: 20px;
 }
-.btn-faq-deploy {
+.btn-faq-deploy,
+.btn-faq-collapse {
   font-size: 14px;
   color: #009999;
   border-bottom: 1px dashed #009999;
   display: none;
   margin-top: 15px;
 }
-.btn-faq-deploy:focus {
+.btn-faq-deploy:focus,
+.btn-faq-collapse:focus {
   color: #009999;
 }
-.btn-faq-deploy:hover {
+.btn-faq-deploy:hover,
+.btn-faq-collapse:hover {
   color: #00b8b8;
   border-bottom: 1px dashed #00b2b3;
 }

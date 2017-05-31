@@ -1291,10 +1291,6 @@ header {
 .l-braces {
   padding: 50px 0 75px;
 }
-.l-braces h2 {
-  font-weight: bold;
-  color: #009999;
-}
 .l-braces-title {
   margin-bottom: 55px;
 }
@@ -1641,12 +1637,11 @@ header {
 /*------------------ l-prices ------------------*/
 .l-prices {
   padding: 50px 0 50px;
-  background: #fff url(../img/bg-l-prices.jpg) center no-repeat;
+  background: #009999 url(../img/bg-l-prices.jpg) center no-repeat;
   background-size: cover;
   color: #fff;
 }
 .l-prices-title {
-  margin: auto;
   margin-bottom: 50px;
 }
 .l-prices-title h3 {
@@ -1712,4 +1707,526 @@ header {
 #l-form-bottom input[type="email"]:focus,
 #l-form-bottom input[type="submit"]:focus {
   outline: none;
+}
+/*------------------ FAQ ------------------*/
+.FAQ {
+  padding-top: 45px;
+  background: #fff;
+}
+.faq-title {
+  font-weight: bold;
+}
+.faq-title h2 {
+  color: #009999;
+}
+.faq-title p {
+  font-size: 24px;
+}
+.faq-block-1,
+.faq-block-2 {
+  padding: 45px 0 30px;
+}
+.faq-block-2 {
+  background: #f6f6f6;
+}
+.question-name {
+  font-size: 30px;
+  color: #73c400;
+  font-weight: bold;
+  display: inline-block;
+  padding-right: 10px;
+}
+.question-name small {
+  font-size: 18px;
+}
+.faq-date {
+  font-size: 12px;
+  color: #999999;
+  font-weight: normal;
+  display: inline-block;
+}
+.faq-question {
+  margin-top: 20px;
+}
+.answer-block {
+  margin-top: 35px;
+  padding-left: 80px;
+}
+.answer-name {
+  color: #009999;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  padding-right: 10px;
+  display: inline-block;
+}
+.answer-name:before {
+  position: absolute;
+  background: url(../img/faq-arrow.svg) 0 0 no-repeat;
+  background-size: cover;
+  left: -55px;
+  top: -10px;
+  content: "";
+  width: 42px;
+  height: 42px;
+}
+.answer-name small {
+  font-size: 18px;
+}
+.faq-answe {
+  margin-top: 20px;
+}
+.btn-faq-deploy {
+  font-size: 14px;
+  color: #009999;
+  border-bottom: 1px dashed #009999;
+  display: none;
+  margin-top: 15px;
+}
+.btn-faq-deploy:focus {
+  color: #009999;
+}
+.btn-faq-deploy:hover {
+  color: #00b8b8;
+  border-bottom: 1px dashed #00b2b3;
+}
+.faq-block-1 .active,
+.faq-block-2 .active {
+  display: inline-block;
+}
+/*------------------ faq-form ------------------*/
+.faq-form {
+  background: #009999;
+  padding: 35px 0 40px;
+}
+.faq-form h4 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 22px;
+}
+#FAQ-form input[type="text"],
+#FAQ-form textarea[name="messege"] {
+  width: 100%;
+  height: 57px;
+  border: none;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 0 22px;
+  color: #999999;
+}
+#FAQ-form textarea[name="messege"] {
+  padding: 22px;
+  height: 170px;
+  resize: none;
+}
+#FAQ-form .check-robot {
+  width: 100%;
+  height: 76px;
+  border: 1px solid #d3d3d3;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  color: #000;
+  padding: 23px 0 0 16px;
+  background: #f9f9f9 url(../img/check-robot.png) right 12px top 7px no-repeat;
+  background-size: 57px 61px;
+}
+#FAQ-form input[type="submit"] {
+  width: 100%;
+  height: 57px;
+  border: 0px solid #262626;
+  -webkit-border-radius: 27px;
+          border-radius: 27px;
+  background: #0cffff;
+  margin-top: 10px;
+  padding: 0 15px;
+  color: #009999;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+#FAQ-form input[type="submit"]:hover {
+  background: #00e7e7;
+}
+#FAQ-form input[type="text"]:focus,
+#FAQ-form textarea[name="messege"]:focus,
+#FAQ-form input[type="checkbox"]:focus,
+#FAQ-form input[type="submit"]:focus {
+  outline: none;
+}
+#FAQ-form input[type="checkbox"] {
+  display: none;
+}
+#FAQ-form .checkbox-custom {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+}
+#FAQ-form .checkbox-custom:hover {
+  cursor: pointer;
+}
+#FAQ-form .checkbox-custom,
+#FAQ-form .label {
+  display: inline-block;
+  vertical-align: middle;
+}
+#FAQ-form .label {
+  color: #000;
+  font-family: ProximaNova, Arial, sans-serif;
+  font-weight: normal;
+}
+#FAQ-form .checkbox:checked + .checkbox-custom::before {
+  content: "✔";
+  position: absolute;
+  top: 0px;
+  left: 5px;
+}
+/*------------------ contacts ------------------*/
+.contacts {
+  padding: 50px 0 90px;
+  font-size: 24px;
+}
+.contacts h2 {
+  color: #009999;
+  margin-bottom: 45px;
+  font-weight: bold;
+}
+.contacts-info {
+  margin-bottom: 80px;
+}
+.contacts-info-mail {
+  color: #425058;
+  text-decoration: underline;
+}
+.contacts-info-mail:hover,
+.contacts-info-mail:focus {
+  color: #425058;
+  text-decoration: underline;
+}
+.contacts-map,
+.contacts-photo {
+  margin-bottom: 50px;
+}
+.contacts-map img,
+.contacts-photo img {
+  width: 100%;
+}
+.contacts-text p + p {
+  margin-top: 35px;
+}
+/*------------------ consultation ------------------*/
+.consultation {
+  padding: 50px 0 75px;
+}
+.consultation-title {
+  margin-bottom: 45px;
+}
+.consultation-title h2 {
+  font-weight: bold;
+  color: #009999;
+}
+.consultation-title p {
+  font-size: 24px;
+  font-weight: bold;
+}
+.consultation-price {
+  margin-top: 25px;
+  color: #009999;
+  font-size: 24px;
+}
+.consultation-text,
+.consultation-img {
+  margin-top: 55px;
+}
+.consultation-img img {
+  width: 100%;
+}
+.consultation-text + .consultation-text {
+  margin-top: 25px;
+}
+.consultation-services {
+  margin-top: 80px;
+  font-size: 24px;
+  color: #009999;
+}
+.consultation-services li + li {
+  margin-top: 30px;
+}
+/*------------------ about-us ------------------*/
+.about-us {
+  padding: 50px 0 75px;
+}
+.about-title {
+  margin-bottom: 55px;
+}
+.about-title h2 {
+  font-weight: bold;
+  color: #009999;
+}
+.about-title p {
+  font-size: 24px;
+  font-weight: bold;
+}
+.about-doctor img {
+  width: 100%;
+}
+.about-doctor + .about-doctor {
+  margin-top: 45px;
+}
+.about-doctor-info {
+  margin-top: 22px;
+}
+.about-doctor-name {
+  color: #73c400;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.about-doctor-post {
+  font-size: 20px;
+  font-weight: bold;
+}
+.btn-about-us {
+  color: #fff;
+  background: #73c400;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  text-align: center;
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  vertical-align: middle;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  margin-top: 45px;
+}
+.btn-about-us:focus,
+.btn-about-us:hover {
+  color: #fff;
+}
+.btn-about-us:hover {
+  background: #79ce00;
+}
+.btn-about-wrap {
+  float: right;
+}
+/*------------------ articles ------------------*/
+.articles {
+  padding: 50px 0 75px;
+}
+.articles-title {
+  margin-bottom: 54px;
+}
+.articles-title h2 {
+  font-weight: bold;
+  color: #009999;
+}
+.articles-title p {
+  font-size: 24px;
+  font-weight: bold;
+}
+.articles-block-wrap + .articles-block-wrap {
+  margin-top: 60px;
+}
+.articles-img {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  width: 280px;
+  height: 200px;
+  position: relative;
+}
+.articles-img img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.articles-block h4 {
+  color: #73c400;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.articles-block p {
+  font-size: 18px;
+}
+.articles-block p + p {
+  margin-top: 10px;
+}
+.btn-articles-wrap {
+  float: right;
+  width: 280px;
+  margin-top: 25px;
+}
+.btn-articles {
+  color: #fff;
+  background: #73c400;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  text-align: center;
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  vertical-align: middle;
+  font-size: 22px;
+  font-weight: bold;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+}
+.btn-articles:focus,
+.btn-articles:hover {
+  color: #fff;
+}
+.btn-articles:hover {
+  background: #79ce00;
+}
+/*------------------ prices-treatment ------------------*/
+.prices-treatment {
+  padding: 50px 0 50px;
+}
+.p-treatment-title {
+  margin-bottom: 60px;
+}
+.p-treatment-title h2 {
+  font-weight: bold;
+  color: #009999;
+  margin-bottom: 50px;
+}
+.p-treatment-title p {
+  font-size: 24px;
+  font-weight: bold;
+}
+.prices-treatment-table table {
+  border-collapse: separate;
+  border-spacing: 20px 0px;
+}
+.prices-treatment-table .table > thead > tr > th {
+  border-bottom: 0px solid #73c400;
+  color: #73c400;
+  text-align: center;
+  vertical-align: middle;
+  padding: 15px 0px;
+  font-size: 18px;
+}
+.prices-treatment-table .table > tbody > tr > td {
+  padding: 15px 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #73c400;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.prices-treatment-table .table > tbody > tr > td:first-of-type {
+  color: #009999;
+  text-align: left;
+  font-size: 18px;
+}
+.prices-treatment-table .table > tbody > tr > td:last-of-type {
+  border-top: 0px solid #73c400;
+  width: 130px;
+  padding: 15px 0px;
+  font-size: 18px;
+}
+.prices-treatment-table .table > tbody > tr.td-first > td {
+  border-top: 0px solid #73c400;
+}
+.prices-treatment-table .l-prices .tablesaw-stack tbody tr {
+  border-bottom: 0px solid #73c400;
+}
+.prices-treatment-table .l-prices .table > tbody > tr.td-first > td {
+  border-top: 0px solid #73c400;
+}
+.btn-prices-treatment {
+  color: #fff;
+  background: #73c400;
+  -webkit-border-radius: 25px;
+          border-radius: 25px;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+  font-size: 14px;
+  font-weight: bold;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+}
+.btn-prices-treatment:focus,
+.btn-prices-treatment:hover {
+  color: #fff;
+}
+.btn-prices-treatment:hover {
+  background: #79ce00;
+}
+.p-treatment-addition {
+  margin-top: 70px;
+  padding-left: 30px;
+}
+/*------------------ prices-included ------------------*/
+.prices-included {
+  padding: 40px 0 50px;
+  background: #f6ffe9;
+}
+.p-included-block h4 {
+  padding-top: 7px;
+  padding-left: 55px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.p-included-block h4:before {
+  position: absolute;
+  background: url(../img/i-advantages-v.svg) 0 0 no-repeat;
+  background-size: cover;
+  left: 13px;
+  top: 0px;
+  content: "";
+  width: 43px;
+  height: 37px;
+}
+.p-included-list li::before {
+  content: '─';
+  padding-right: 10px;
+}
+/*------------------ prices-not-included ------------------*/
+.prices-not-included {
+  padding: 40px 0 50px;
+  background: #faeeee;
+}
+.p-not-included-block h4 {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 7px;
+  padding-left: 55px;
+  margin-bottom: 30px;
+}
+.p-not-included-block h4:before {
+  position: absolute;
+  background: url(../img/i-advantages-x.svg) 0 0 no-repeat;
+  background-size: cover;
+  left: 13px;
+  top: 0px;
+  content: "";
+  width: 43px;
+  height: 37px;
+}
+.p-not-included-list li::before {
+  content: '─';
+  padding-right: 10px;
 }

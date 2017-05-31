@@ -267,6 +267,13 @@
   .treatment-img-6 img {
     width: 100%;
   }
+  .consultation-services {
+    margin-top: 70px;
+    font-size: 24px;
+  }
+  .prices-treatment-table table {
+    font-size: 16px;
+  }
 }
 @media only screen and (max-width: 991px) {
   .h-logo img {
@@ -566,6 +573,24 @@
     -webkit-box-shadow: 0 3px 57px rgba(0, 0, 0, 0.37);
             box-shadow: 0 3px 57px rgba(0, 0, 0, 0.37);
   }
+  .consultation-text,
+  .consultation-img {
+    margin-top: 45px;
+  }
+  .consultation-services {
+    margin-top: 50px;
+    font-size: 22px;
+  }
+  .consultation-services li + li {
+    margin-top: 25px;
+  }
+  .prices-treatment-table .table > tbody > tr > td {
+    padding: 15px 0;
+  }
+  .prices-treatment-table .table > tbody > tr > td:first-of-type {
+    text-align: left;
+    width: 20%;
+  }
 }
 @media only screen and (max-width: 767px) {
   .h-logo .h-logo img {
@@ -798,6 +823,54 @@
     -webkit-box-shadow: 0 3px 57px rgba(0, 0, 0, 0.37);
             box-shadow: 0 3px 57px rgba(0, 0, 0, 0.37);
   }
+  .contacts {
+    padding: 30px 0 70px;
+    font-size: 20px;
+  }
+  .contacts h2 {
+    margin-bottom: 35px;
+  }
+  .contacts-text p + p {
+    margin-top: 25px;
+  }
+  .consultation {
+    padding: 40px 0 75px;
+  }
+  .consultation-title {
+    margin-bottom: 35px;
+  }
+  .consultation-services {
+    margin-top: 40px;
+    font-size: 18px;
+  }
+  .consultation-services li + li {
+    margin-top: 20px;
+  }
+  .about-doctor-img {
+    width: 250px;
+  }
+  .btn-about-wrap {
+    float: left;
+  }
+  .articles {
+    padding: 30px 0 75px;
+  }
+  .articles-block h4 {
+    margin-bottom: 15px;
+    font-size: 26px;
+  }
+  .prices-treatment-table .table > thead > tr > th {
+    font-size: 16px;
+  }
+  .prices-treatment-table .table > tbody > tr > td {
+    font-size: 15px;
+  }
+  .prices-treatment-table .table > tbody > tr > td:first-of-type {
+    font-size: 14px;
+  }
+  .prices-treatment-table .table > tbody > tr > td:last-of-type {
+    font-size: 15px;
+  }
 }
 @media only screen and (max-width: 650px) {
   .h-body h1 {
@@ -818,6 +891,24 @@
   .l-treatment h3 {
     margin-bottom: 20px;
     font-size: 30px;
+  }
+  .consultation {
+    padding: 30px 0 75px;
+  }
+  .consultation-title h2 {
+    font-size: 40px;
+  }
+  .articles-block-wrap + .articles-block-wrap {
+    margin-top: 80px;
+  }
+  .articles-img {
+    margin-bottom: 10px;
+  }
+  .articles-block-text {
+    display: inline-block;
+  }
+  .btn-articles-wrap {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 639px) {
@@ -843,6 +934,10 @@
     width: 50%;
     display: inline-block;
     text-align: right;
+  }
+  .prices-treatment-table .table > tbody > tr > td:first-of-type {
+    font-size: 18px;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -933,6 +1028,26 @@
     margin-bottom: 20px;
     font-size: 30px;
   }
+  .consultation-title {
+    margin-bottom: 30px;
+  }
+  .consultation-title h2 {
+    font-size: 36px;
+  }
+  .consultation-title p {
+    font-size: 22px;
+  }
+  .consultation-price {
+    margin-top: 25px;
+    font-size: 20px;
+  }
+  .about-doctor-name {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .about-doctor-post {
+    font-size: 18px;
+  }
 }
 @media only screen and (max-width: 580px) {
   .results-img {
@@ -1014,6 +1129,36 @@
   }
   .l-gallery h3 {
     font-size: 30px;
+  }
+  .check-robot-xs {
+    width: 250px;
+  }
+  .btn-faq-form {
+    width: 100%;
+    margin-left: 0;
+  }
+  #FAQ-form input[type="submit"] {
+    margin-top: 15px;
+  }
+  .consultation-price {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  .consultation-text,
+  .consultation-img {
+    margin-top: 35px;
+  }
+  .about-doctor-img {
+    width: 280px;
+  }
+  .about-doctor-info {
+    margin-top: 22px;
+    display: inline-block;
+  }
+  .btn-about-wrap {
+    float: left;
+    width: 100%;
+    margin-left: 0;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1133,6 +1278,29 @@
     padding-top: 20px;
     padding-left: 90px;
     height: 120px;
+  }
+  .answer-block {
+    margin-top: 35px;
+    padding-left: 60px;
+  }
+  .answer-name {
+    font-size: 28px;
+  }
+  .contacts {
+    padding: 30px 0 60px;
+    font-size: 18px;
+  }
+  .contacts .contacts h2 {
+    margin-bottom: 25px;
+  }
+  .contacts-info {
+    margin-bottom: 60px;
+  }
+  .consultation {
+    padding: 20px 0 75px;
+  }
+  .consultation-title h2 {
+    font-size: 30px;
   }
 }
 @media only screen and (max-width: 360px) {

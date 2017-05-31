@@ -2124,7 +2124,6 @@ header {
 .prices-treatment-table .table > tbody > tr > td {
   padding: 15px 8px;
   line-height: 1.42857143;
-  vertical-align: top;
   border-top: 1px solid #73c400;
   vertical-align: middle;
   text-align: center;
@@ -2143,12 +2142,6 @@ header {
   font-size: 18px;
 }
 .prices-treatment-table .table > tbody > tr.td-first > td {
-  border-top: 0px solid #73c400;
-}
-.prices-treatment-table .l-prices .tablesaw-stack tbody tr {
-  border-bottom: 0px solid #73c400;
-}
-.prices-treatment-table .l-prices .table > tbody > tr.td-first > td {
   border-top: 0px solid #73c400;
 }
 .btn-prices-treatment {
@@ -2229,4 +2222,50 @@ header {
 .p-not-included-list li::before {
   content: '─';
   padding-right: 10px;
+}
+/*------------------ prices-work ------------------*/
+.prices-work {
+  padding: 70px 0 70px;
+}
+.prices-work h4 {
+  font-weight: bold;
+  font-size: 24px;
+  padding-left: 25px;
+  margin-bottom: 30px;
+}
+.prices-whitening-table table,
+.prices-hygiene-table table {
+  border-collapse: separate;
+  border-spacing: 20px 0px;
+  width: 100%;
+}
+.prices-whitening-table tr td,
+.prices-hygiene-table tr td {
+  padding: 15px 8px;
+  line-height: 1.42857143;
+  border-top: 1px solid #73c400;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.prices-whitening-table tr:first-of-type td,
+.prices-hygiene-table tr:first-of-type td {
+  border-top: 0px solid #73c400;
+}
+.prices-whitening-table tr td:first-of-type,
+.prices-hygiene-table tr td:first-of-type {
+  color: #009999;
+  text-align: left;
+  font-size: 18px;
+}
+.prices-whitening-table tr td:last-of-type,
+.prices-hygiene-table tr td:last-of-type {
+  text-align: center;
+  font-size: 22px;
+  width: 22%;
+  white-space: nowrap;
+}
+.prices-whitening-table {
+  margin-bottom: 50px;
 }

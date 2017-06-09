@@ -188,21 +188,27 @@ $(document).ready(function () {
              }
           });
 
-            // map.disableScrollZoom();
-
              DG.marker([55.66453963191137, 37.75214331054688]).addTo(map);
 
-             
          });
 
-   /*//maps - scrolloff
-    $('#map').addClass('scrolloff');
-    $('#overlay').on('click', function () {
-        $('#map').removeClass('scrolloff'); 
-    });
-    $("#map").mouseleave(function () {
-        $('#map1').addClass('scrolloff'); 
+   /* map.on('click', function() {
+      if (map.scrollWheelZoom.enabled()) {
+        map.scrollWheelZoom.disable();
+        }
+      else {
+      map.scrollWheelZoom.enable();
+      }
     });*/
+
+  /*map.on('click', function() {
+    if (!map.scrollWheelZoom.enabled()) {
+      map.scrollWheelZoom.enable();
+    }
+  });
+  map.on('mouseout', function() {
+    map.scrollWheelZoom.disable();
+  });*/
 
 });
 

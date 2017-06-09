@@ -94,13 +94,15 @@ $(document).ready(function () {
       var  $this = $(this),
            wrap = $this.closest(".faq-block-wrap"),
            deploy = wrap.find(".btn-faq-deploy"),
-           question = wrap.find(".faq-question")
-           answer = wrap.find(".answer-block");
+           question = wrap.find(".faq-question"),
+           clickWrap = wrap.find(".faq-click-wrap");
 
       $this.removeClass('active');
       deploy.addClass('active');
-      answer.addClass('active-collapse');
-      question.addClass('active-collapse-text');
+      clickWrap.animate({height: "24"},1000);
+      question.delay(1000).queue(function (){
+        $(this).addClass('active-collapse-text');
+      });
     });
 
     $('.btn-faq-deploy').on('click', function (e) {
@@ -109,12 +111,13 @@ $(document).ready(function () {
       var  $this = $(this),
            wrap = $this.closest(".faq-block-wrap"),
            collapse = wrap.find(".btn-faq-collapse"),
-           answer = wrap.find(".answer-block"),
+           clickWrap = wrap.find(".faq-click-wrap"),
+           heightClickWrap = clickWrap.css({"height":"auto"}),
            question = wrap.find(".faq-question");
 
       $this.removeClass('active');
       collapse.addClass('active');
-      answer.removeClass('active-collapse');
+      clickWrap.animate({height: heightClickWrap},1000);
       question.removeClass('active-collapse-text');
     });
 
@@ -158,7 +161,7 @@ $(document).ready(function () {
   });
 
 
-    //2gis map
+    //2gis map --------------------
     var  map;
 
          DG.then(function () {
@@ -167,22 +170,23 @@ $(document).ready(function () {
                  zoom: 16
              });
 
-/*console.log(else if);
-         if ($(window).width() < 1200) {
-            map.setView([55.66453963191137, 37.75014331054688], 16);
-         } else if ($(window).width() < 992) {
-            map.setView([55.66453963191137, 39.75014331054688], 16);
-         } else {
-            map.setView([55.66453963191137, 39.75014331054688], 16);
-         } 
+             if ($(window).width() >= 992) {
+                map.setView([55.66453963191137, 37.75014331054688], 16);
+             } else if ($(window).width() < 992 && $(window).width() >= 768 ) {
+                map.setView([55.66453963191137, 37.74714331054688], 16);
+             } else {
+                map.setView([55.66653963191137, 37.75214331054688], 16);
+             }
 
-         if (1200 > $(window).width() &&  $(window).width() >= 992 ) {
-            map.setView([55.66453963191137, 37.75014331054688], 16);
-         } else if (992 > $(window).width() &&  $(window).width() >= 768 ) {
-            map.setView([55.66453963191137, 39.75014331054688], 16);
-         } else {
-            map.setView([55.66453963191137, 39.75014331054688], 16);
-         }*/
+          $(window).resize(function() {
+            if ($(window).width() >= 992) {
+                map.setView([55.66453963191137, 37.75014331054688], 16);
+             } else if ($(window).width() < 992 && $(window).width() >= 768 ) {
+                map.setView([55.66453963191137, 37.74714331054688], 16);
+             } else {
+                map.setView([55.66653963191137, 37.75214331054688], 16);
+             }
+          });
 
             // map.disableScrollZoom();
 
@@ -191,21 +195,7 @@ $(document).ready(function () {
              
          });
 
-/*if$(window).resize(function() {
-    
-
-     (1200 > $(window).width() &&  $(window).width() >= 992 ) {
-                 map.setView([55.66453963191137, 37.75014331054688], 16);
-               } 
-});
-
- else if if (992 > $(window).width() &&  $(window).width() >= 768 ) {
-            map.setView([55.66453963191137, 40.000], 16);
-         } else {
-            map.setView([55.66453963191137, 37.75014331054688], 16);
-         }
-
-   //maps - scrolloff
+   /*//maps - scrolloff
     $('#map').addClass('scrolloff');
     $('#overlay').on('click', function () {
         $('#map').removeClass('scrolloff'); 
@@ -214,4 +204,163 @@ $(document).ready(function () {
         $('#map1').addClass('scrolloff'); 
     });*/
 
+});
+
+
+
+// функция, которая задает группе колонок одинаковую высоту
+function setEqualHeight(columns) {
+  
+  var tallestcolumn = 0;
+  
+  columns.each(
+    
+    function() {
+      currentHeight = $(this).height();
+      
+      if(currentHeight > tallestcolumn) {
+        tallestcolumn = currentHeight;
+      }
+    }
+
+  );
+
+  columns.height(tallestcolumn);
+}
+
+//Выравнивание по высоте блоков в braces-types
+var alignHeight1 = $(".br-types-img"),
+    alignHeight1m = $(".br-types-block-m>.br-types-img"),
+    alignHeight1c = $(".br-types-block-c>.br-types-img"),
+    alignHeight2 = $(".br-types-block-m>h6, .br-types-block-c>h6"),
+    alignHeight2m = $(".br-types-block-m>h6"),
+    alignHeight2c = $(".br-types-block-c>h6"),
+    alignHeight3 = $(".types-block-m-height, .types-block-c-height"),
+    alignHeight3m = $(".types-block-m-height"),
+    alignHeight3c = $(".types-block-c-height");
+
+$(document).ready(function() {
+  
+  
+  if  ($(window).width() <= 480) {
+
+  } else if  ($(window).width() <= 580) {
+    setEqualHeight(alignHeight1m);
+    setEqualHeight(alignHeight2m);
+    setEqualHeight(alignHeight3m);
+  } else if  ($(window).width() < 992) {
+    setEqualHeight(alignHeight1m);
+    setEqualHeight(alignHeight1c);
+    setEqualHeight(alignHeight2m);
+    setEqualHeight(alignHeight2c);
+    setEqualHeight(alignHeight3m);
+    setEqualHeight(alignHeight3c);
+  } else if ($(window).width() >= 992) {
+    setEqualHeight(alignHeight1);
+    setEqualHeight(alignHeight2);
+    setEqualHeight(alignHeight3);
+  }
+
+});
+
+$(window).resize(function() {
+  alignHeight1.attr('style','');
+  alignHeight2.attr('style','');
+  alignHeight2m.attr('style','');
+  alignHeight2c.attr('style','');
+  alignHeight3.attr('style','');
+  alignHeight3m.attr('style','');
+  alignHeight3c.attr('style','');
+
+  if  ($(window).width() <= 480) {
+
+  } else if  ($(window).width() <= 580) {
+    setEqualHeight(alignHeight1m);
+    setEqualHeight(alignHeight2m);
+    setEqualHeight(alignHeight3m);
+  } else if  ($(window).width() < 992) {
+    setEqualHeight(alignHeight1m);
+    setEqualHeight(alignHeight1c);
+    setEqualHeight(alignHeight2m);
+    setEqualHeight(alignHeight2c);
+    setEqualHeight(alignHeight3m);
+    setEqualHeight(alignHeight3c);
+  } else if ($(window).width() >= 992) {
+    setEqualHeight(alignHeight1);
+    setEqualHeight(alignHeight2);
+    setEqualHeight(alignHeight3);
+  }
+});
+
+//Выравнивание по высоте блоков в outer-braces-material
+var alignHeight4 = $(".material-advantages"),
+    alignHeight5 = $(".material-disadvantages");
+$(document).ready(function() {
+  
+  if ($(window).width() >= 992) {
+    setEqualHeight(alignHeight4);
+    setEqualHeight(alignHeight5);
+  } 
+});
+
+$(window).resize(function() {
+  alignHeight4.attr('style','');
+  alignHeight5.attr('style','');
+
+  if ($(window).width() >= 992) {
+    setEqualHeight(alignHeight4);
+    setEqualHeight(alignHeight5);
+  } 
+
+});
+
+
+//Выравнивание по высоте блоков в braces-look
+var alignHeight6 = $(".br-look-block-m>h6, .br-look-block-c>h6"),
+    alignHeight6m = $(".br-look-block-m>h6"),
+    alignHeight6c = $(".br-look-block-c>h6"),
+    alignHeight7 = $(".br-look-img-wrap"),
+    alignHeight7m = $(".br-look-block-m>.br-look-img-wrap"),
+    alignHeight7c = $(".br-look-block-c>.br-look-img-wrap");
+
+$(document).ready(function() {
+  
+  
+  if  ($(window).width() <= 480) {
+  } else if  ($(window).width() <= 580) {
+    setEqualHeight(alignHeight6m);
+    setEqualHeight(alignHeight7m);
+  } else if  ($(window).width() < 992) {
+    setEqualHeight(alignHeight6m);
+    setEqualHeight(alignHeight6c);
+    setEqualHeight(alignHeight7m);
+    setEqualHeight(alignHeight7c);
+  } else if ($(window).width() >= 992) {
+    setEqualHeight(alignHeight6);
+    setEqualHeight(alignHeight7);
+  }
+
+});
+
+$(window).resize(function() {
+  alignHeight6.attr('style','');
+  alignHeight6m.attr('style','');
+  alignHeight6c.attr('style','');
+  alignHeight7.attr('style','');
+  alignHeight7m.attr('style','');
+  alignHeight7c.attr('style','');
+
+  if  ($(window).width() <= 480) {
+  } else if  ($(window).width() <= 580) {
+    setEqualHeight(alignHeight6m);
+    setEqualHeight(alignHeight7m);
+  } else if  ($(window).width() < 992) {
+    setEqualHeight(alignHeight6m);
+    setEqualHeight(alignHeight6c);
+    setEqualHeight(alignHeight7m);
+    setEqualHeight(alignHeight7c);
+  } else if ($(window).width() >= 992) {
+    setEqualHeight(alignHeight6);
+    setEqualHeight(alignHeight7);
+  }
 });

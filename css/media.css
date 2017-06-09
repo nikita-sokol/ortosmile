@@ -274,6 +274,25 @@
   .prices-treatment-table table {
     font-size: 16px;
   }
+  .br-types-block-m h6,
+  .br-types-block-c h6 {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .br-look-block-m h6,
+  .br-look-block-c h6 {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .material-text {
+    font-size: 16px;
+  }
+  .outer-braces-table {
+    border-spacing: 30px 0px;
+  }
+  .outer-braces-table > tbody tr td {
+    font-size: 20px;
+  }
 }
 @media only screen and (max-width: 991px) {
   .h-logo img {
@@ -438,7 +457,8 @@
     -webkit-box-shadow: 0 3px 57px rgba(0, 0, 0, 0.37);
             box-shadow: 0 3px 57px rgba(0, 0, 0, 0.37);
   }
-  .advantages-title h4 {
+  .advantages-title h4,
+  .outer-advantages-title h4 {
     font-size: 26px;
   }
   .results-info {
@@ -516,9 +536,6 @@
   .l-treatment h3 {
     margin-bottom: 20px;
   }
-  .t-namber-1 {
-    background: #fff url(../img/t-1.png) left 320px bottom 0 no-repeat;
-  }
   .treatment-text-1,
   .treatment-text-2,
   .treatment-text-3,
@@ -538,26 +555,53 @@
     float: left;
     width: 100%;
   }
+  .treatment-text-1 {
+    background: #fff url(../img/t-1.png) left -10px bottom -2px no-repeat;
+    background-size: auto 150px;
+  }
+  .treatment-text-2 {
+    background: #fff url(../img/t-2.png) left -10px bottom -2px no-repeat;
+    background-size: auto 150px;
+  }
+  .treatment-text-3 {
+    background: #fff url(../img/t-3.png) left -10px bottom -2px no-repeat;
+    background-size: auto 150px;
+  }
+  .treatment-text-4 {
+    background: #fff url(../img/t-4.png) left -10px bottom -2px no-repeat;
+    background-size: auto 150px;
+  }
+  .treatment-text-5 {
+    background: #fff url(../img/t-5.png) left -10px bottom -2px no-repeat;
+    background-size: auto 150px;
+  }
+  .treatment-text-6 {
+    background: #fff url(../img/t-6.png) left -10px bottom -2px no-repeat;
+    background-size: auto 150px;
+  }
+  .t-namber-1 {
+    background: #fff;
+  }
   .t-namber-2 {
-    background: #fff url(../img/t-2.png) left 435px bottom 0 no-repeat;
+    background: #fff;
   }
   .t-namber-3 {
-    background: #fff url(../img/t-3.png) left 285px bottom 0 no-repeat;
+    background: #fff;
   }
   .t-namber-4 {
-    background: #fff url(../img/t-4.png) left 400px bottom 0 no-repeat;
+    background: #fff;
   }
   .treatment-img-4 img {
     width: 100%;
   }
   .t-namber-5 {
-    background: #fff url(../img/t-5.png) left 350px bottom 0 no-repeat;
+    background: #fff;
   }
   .treatment-img-5 img {
     width: 100%;
   }
   .t-namber-6 {
-    background: #fff url(../img/t-6.png) left 420px bottom 0 no-repeat;
+    background: #fff;
   }
   .treatment-img-6 img {
     width: 100%;
@@ -593,6 +637,51 @@
   }
   .prices-work h4 {
     margin-bottom: 20px;
+  }
+  .outer-braces-block {
+    font-size: 15px;
+  }
+  .outer-braces-block p + p {
+    margin-top: 15px;
+  }
+  .outer-braces-fact {
+    font-size: 15px;
+    margin-top: 30px;
+  }
+  .outer-braces-title {
+    margin-bottom: 40px;
+  }
+  .outer-material-blk + .outer-material-blk {
+    margin-top: 20px;
+  }
+  .material-text {
+    font-size: 18px;
+  }
+  .br-types-block-m .br-types-img {
+    width: 230px;
+  }
+  .br-look-block-m .br-look-img {
+    width: 230px;
+  }
+  .br-types-block-m h6,
+  .br-types-block-c h6 {
+    font-size: 18px;
+  }
+  .br-look-block-m h6,
+  .br-look-block-c h6 {
+    font-size: 18px;
+  }
+  .braces-types-blk + .braces-types-blk {
+    margin-top: 20px;
+  }
+  .braces-look-blk + .braces-look-blk {
+    margin-top: 20px;
+  }
+  .outer-braces-table {
+    border-spacing: 20px 0px;
+  }
+  .outer-braces-table > tbody tr td {
+    font-size: 16px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -855,6 +944,9 @@
   .btn-about-wrap {
     float: left;
   }
+  #map {
+    height: 900px;
+  }
   .articles {
     padding: 30px 0 75px;
   }
@@ -886,6 +978,32 @@
     font-size: 22px;
     font-weight: bold;
   }
+  .outer-prices-title h3 {
+    font-size: 30px;
+  }
+  .outer-braces-block {
+    font-size: 18px;
+  }
+  .outer-braces-block p + p {
+    margin-top: 25px;
+  }
+  .outer-braces-title {
+    margin-bottom: 50px;
+  }
+  .outer-braces-fact {
+    margin-top: 35px;
+    font-size: 20px;
+    color: #fff;
+  }
+  .outer-braces-img {
+    margin-top: 20px;
+  }
+  .outer-braces-table {
+    border-spacing: 20px 0px;
+  }
+  .outer-braces-table > tbody tr td {
+    font-size: 18px;
+  }
 }
 @media only screen and (max-width: 650px) {
   .h-body h1 {
@@ -895,9 +1013,6 @@
   .h-subtitle {
     font-size: 26px;
     margin-bottom: 55px;
-  }
-  #map {
-    height: 700px;
   }
   .l-treatment {
     background: #dcecec;
@@ -924,6 +1039,9 @@
   }
   .btn-articles-wrap {
     width: 100%;
+  }
+  .br-types-block-c h6 {
+    font-size: 15px;
   }
 }
 @media only screen and (max-width: 639px) {
@@ -1086,6 +1204,12 @@
     padding-bottom: 40px;
     background: none;
   }
+  .m-additional-info {
+    background: #73c400 url(../img/bg-additional-info-round.png) no-repeat;
+    background-position: center bottom -40px;
+    background-size: auto 280px;
+    padding-bottom: 155px;
+  }
   .m-additional-block {
     margin-left: 0;
     width: 100%;
@@ -1143,6 +1267,33 @@
   .results-name-wrap {
     width: 100%;
   }
+  .br-types-block-m .br-types-img {
+    width: 100%;
+  }
+  .br-types-block-c {
+    width: 100%;
+  }
+  .br-types-block-c .br-types-img {
+    width: 230px;
+  }
+  .br-types-block-c h6 {
+    font-size: 18px;
+  }
+  .br-look-block-m .br-look-img {
+    width: 100%;
+  }
+  .br-look-block-c {
+    width: 100%;
+  }
+  .br-look-block-c .br-look-img {
+    width: 230px;
+  }
+  .br-look-block-c h6 {
+    font-size: 18px;
+  }
+  .br-look-block-c + .br-look-block-c {
+    margin-top: 20px;
+  }
 }
 @media only screen and (max-width: 550px) {
   .map-contacts {
@@ -1168,6 +1319,22 @@
   }
   .p-treatment-title p + p {
     margin-top: 5px;
+  }
+  .outer-braces {
+    padding: 40px 0 55px;
+  }
+  .outer-braces-title {
+    margin-bottom: 40px;
+  }
+  .outer-braces-title h2 {
+    font-size: 36px;
+  }
+  .outer-braces-title p {
+    font-size: 22px;
+  }
+  .outer-braces-fact {
+    margin-top: 30px;
+    font-size: 18px;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -1250,11 +1417,18 @@
     margin-top: 35px;
   }
   .about-doctor-img {
+    width: 100%;
+  }
+  .about-doctor-img img {
     width: 280px;
+    display: block;
+    margin: 0 auto;
   }
   .about-doctor-info {
     margin-top: 22px;
     display: inline-block;
+    text-align: center;
+    width: 100%;
   }
   .btn-about-wrap {
     float: left;
@@ -1269,6 +1443,28 @@
   .prices-hygiene-table tr td:last-of-type {
     font-size: 20px;
     width: 22%;
+  }
+  .material-block-table {
+    display: block;
+  }
+  .material-block-img {
+    display: block;
+    width: 280px;
+  }
+  .material-text {
+    padding: 15px;
+    display: block;
+  }
+  .material-advantages,
+  .material-disadvantages {
+    padding: 30px 60px 44px 40px;
+  }
+  .outer-braces-material h3 {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .braces-types h3 {
+    font-size: 30px;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1313,6 +1509,21 @@
   }
   .m-results h3 {
     font-size: 30px;
+  }
+  .br-types-block-m {
+    width: 100%;
+  }
+  .br-types-block-m .br-types-img {
+    width: 230px;
+  }
+  .br-look-block-m {
+    width: 100%;
+  }
+  .br-look-block-m .br-look-img {
+    width: 230px;
+  }
+  .br-look-block-m + .br-look-block-m {
+    margin-top: 20px;
   }
 }
 @media only screen and (max-width: 450px) {

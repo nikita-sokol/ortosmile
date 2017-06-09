@@ -509,7 +509,7 @@
   }
   .incognito-text-1 {
     width: 100%;
-    padding: 40px;
+    padding: 20px;
   }
   .incognito-img-1 {
     float: left;
@@ -517,7 +517,7 @@
   }
   .incognito-text-2 {
     width: 100%;
-    padding: 40px;
+    padding: 20px;
     float: left;
   }
   .incognito-img-2 {
@@ -525,7 +525,7 @@
     width: 100%;
   }
   .incognito-text-3 {
-    padding: 40px;
+    padding: 20px;
     width: 100%;
     float: left;
   }
@@ -542,7 +542,7 @@
   .treatment-text-4,
   .treatment-text-5,
   .treatment-text-6 {
-    padding: 25px 40px 25px 40px;
+    padding: 20px;
     float: left;
     width: 100%;
   }
@@ -1221,15 +1221,6 @@
   .additional-list {
     font-size: 24px;
   }
-  .incognito-text-1 {
-    padding: 20px;
-  }
-  .incognito-text-2 {
-    padding: 20px;
-  }
-  .incognito-text-3 {
-    padding: 20px;
-  }
   .l-incognito {
     padding: 50px 0 60px;
     background: #f0f0f0;
@@ -1450,6 +1441,7 @@
   .material-block-img {
     display: block;
     width: 280px;
+    margin: auto;
   }
   .material-text {
     padding: 15px;

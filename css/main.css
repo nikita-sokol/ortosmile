@@ -819,21 +819,23 @@ header {
   top: 0px;
   content: "";
   height: 46px;
+  width: 22px;
   border-right: 23px solid #fff;
 }
 .results-name-item .active {
   background: #73c400;
   color: #fff;
 }
-.results-name-item .active:after {
-  border: 23px solid transparent;
-  border-left: 23px solid #73c400;
+.results-name-item .active::after {
+  border: 0 solid #fff;
   position: absolute;
-  background: url(../img/i-shower.svg) 0 0 no-repeat;
+  background: url(../img/results-arrow.svg) 0 0 no-repeat;
   background-size: cover;
   left: 100%;
   top: 0px;
   content: "";
+  width: 22px;
+  height: 46px;
 }
 .results-info {
   background: #fff;
@@ -1728,16 +1730,6 @@ header {
 }
 .faq-block-2 {
   background: #f6f6f6;
-}
-.active-collapse-text {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  padding-right: 10px;
-  height: 24px;
-}
-.active-collapse {
-  height: 24px;
 }
 .question-name {
   font-size: 30px;

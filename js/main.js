@@ -88,6 +88,10 @@ $(document).ready(function () {
    });
     
     //faq-block
+    var activeCollapse = $(".active-collapse");
+
+    activeCollapse.css({"height": "24"});
+
     $('.btn-faq-collapse').on('click', function (e) {
       e.preventDefault();
 
@@ -99,10 +103,7 @@ $(document).ready(function () {
 
       $this.removeClass('active');
       deploy.addClass('active');
-      clickWrap.animate({height: "24"},1000);
-      question.delay(1000).queue(function (){
-        $(this).addClass('active-collapse-text');
-      });
+      clickWrap.animate({height: "24"},500);
     });
 
     $('.btn-faq-deploy').on('click', function (e) {
@@ -112,13 +113,12 @@ $(document).ready(function () {
            wrap = $this.closest(".faq-block-wrap"),
            collapse = wrap.find(".btn-faq-collapse"),
            clickWrap = wrap.find(".faq-click-wrap"),
-           heightClickWrap = clickWrap.css({"height":"auto"}),
+           heightClickWrap = wrap.find(".faq-click-height").height(),
            question = wrap.find(".faq-question");
 
       $this.removeClass('active');
       collapse.addClass('active');
-      clickWrap.animate({height: heightClickWrap},1000);
-      question.removeClass('active-collapse-text');
+      clickWrap.removeClass('active-collapse').animate({height: heightClickWrap},500);
     });
 
 
@@ -364,3 +364,4 @@ $(window).resize(function() {
     setEqualHeight(alignHeight7);
   }
 });
+

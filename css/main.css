@@ -813,8 +813,6 @@ header {
 }
 .results-name-link:after {
   position: absolute;
-  background: url(../img/i-shower.svg) 0 0 no-repeat;
-  background-size: cover;
   left: 100%;
   top: 0px;
   content: "";

@@ -164,51 +164,35 @@ $(document).ready(function () {
     //2gis map --------------------
     var  map;
 
-         DG.then(function () {
-             map = DG.map('map', {
-                 center: [55.66453963191137, 37.75214331054688],
-                 zoom: 16
-             });
+    DG.then(function () {
+       map = DG.map('map', {
+           center: [55.66453963191137, 37.75214331054688],
+           zoom: 16
+       });
+       
+       map.scrollWheelZoom.disable();
 
-             if ($(window).width() >= 992) {
-                map.setView([55.66453963191137, 37.75014331054688], 16);
-             } else if ($(window).width() < 992 && $(window).width() >= 768 ) {
-                map.setView([55.66453963191137, 37.74714331054688], 16);
-             } else {
-                map.setView([55.66653963191137, 37.75214331054688], 16);
-             }
+       if ($(window).width() >= 992) {
+          map.setView([55.66453963191137, 37.75014331054688], 16);
+       } else if ($(window).width() < 992 && $(window).width() >= 768 ) {
+          map.setView([55.66453963191137, 37.74714331054688], 16);
+       } else {
+          map.setView([55.66653963191137, 37.75214331054688], 16);
+       }
 
-          $(window).resize(function() {
-            if ($(window).width() >= 992) {
-                map.setView([55.66453963191137, 37.75014331054688], 16);
-             } else if ($(window).width() < 992 && $(window).width() >= 768 ) {
-                map.setView([55.66453963191137, 37.74714331054688], 16);
-             } else {
-                map.setView([55.66653963191137, 37.75214331054688], 16);
-             }
-          });
+    $(window).resize(function() {
+      if ($(window).width() >= 992) {
+          map.setView([55.66453963191137, 37.75014331054688], 16);
+       } else if ($(window).width() < 992 && $(window).width() >= 768 ) {
+          map.setView([55.66453963191137, 37.74714331054688], 16);
+       } else {
+          map.setView([55.66653963191137, 37.75214331054688], 16);
+       }
+    });
 
-             DG.marker([55.66453963191137, 37.75214331054688]).addTo(map);
+       DG.marker([55.66453963191137, 37.75214331054688]).addTo(map);
 
-         });
-
-   /* map.on('click', function() {
-      if (map.scrollWheelZoom.enabled()) {
-        map.scrollWheelZoom.disable();
-        }
-      else {
-      map.scrollWheelZoom.enable();
-      }
-    });*/
-
-  /*map.on('click', function() {
-    if (!map.scrollWheelZoom.enabled()) {
-      map.scrollWheelZoom.enable();
-    }
-  });
-  map.on('mouseout', function() {
-    map.scrollWheelZoom.disable();
-  });*/
+    });
 
 });
 

@@ -1004,6 +1004,12 @@
   .outer-braces-table > tbody tr td {
     font-size: 18px;
   }
+  .patients-block-text h5 {
+    text-align: left;
+  }
+  .teeth-whitening h2 {
+    margin-bottom: 35px;
+  }
 }
 @media only screen and (max-width: 650px) {
   .h-body h1 {
@@ -1327,6 +1333,9 @@
     margin-top: 30px;
     font-size: 18px;
   }
+  .kinds-bleaching-table > tbody > tr > td:last-child {
+    width: 160px;
+  }
 }
 @media only screen and (max-width: 500px) {
   .h-call {
@@ -1617,6 +1626,13 @@
   }
   .prices-treatment-table .table > tbody > tr > td {
     font-size: 16px;
+  }
+  .teeth-whitening h2 {
+    font-size: 40px;
+  }
+  .kinds-bleaching-table > tbody > tr > td:last-child {
+    width: 130px;
+    font-size: 20px;
   }
 }
 @media only screen and (max-width: 360px) {

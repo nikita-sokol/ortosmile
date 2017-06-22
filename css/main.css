@@ -2642,3 +2642,209 @@ header {
 .outer-braces-table > tbody .outer-tbody-second-tr td {
   border-top: 0px solid #000;
 }
+/*------------------ new-patients ------------------*/
+.new-patients {
+  padding: 45px 0 80px;
+  background: #fff;
+}
+.new-patients-title {
+  font-weight: bold;
+  margin-bottom: 55px;
+}
+.new-patients-title h2 {
+  color: #009999;
+}
+a.btn-new-patients {
+  position: relative;
+  color: #009999;
+  font-size: 24px;
+  margin-left: 32px;
+  margin-bottom: 35px;
+}
+a.btn-new-patients span {
+  border-bottom: 1px dotted #099b9b;
+}
+.btn-new-patients:hover {
+  color: #009999;
+}
+.btn-new-patients::before {
+  position: absolute;
+  background: url(../img/patients-arrow.svg) 0 0 no-repeat;
+  background-size: cover;
+  left: -29px;
+  top: 12px;
+  content: "";
+  width: 16px;
+  height: 10px;
+}
+.patients-block .active {
+  color: #425058;
+}
+.patients-block .active:hover {
+  color: #425058;
+}
+.patients-block .active::before {
+  position: absolute;
+  background: url(../img/patients-arrow-h.svg) 0 0 no-repeat;
+  background-size: cover;
+  left: -29px;
+  top: 12px;
+  content: "";
+  width: 16px;
+  height: 10px;
+}
+.patients-block-text {
+  margin-bottom: 35px;
+  display: none;
+}
+.patients-block-text h5 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.patients-block-text h5:nth-of-type(2) {
+  margin-bottom: 50px;
+}
+.patients-end {
+  margin-top: 25px;
+  text-align: right;
+}
+/*------------------ teeth-whitening ------------------*/
+.teeth-whitening {
+  padding: 45px 0;
+  background: #fff;
+}
+.teeth-whitening h2 {
+  color: #009999;
+  font-weight: bold;
+  margin-bottom: 55px;
+}
+.teeth-whitening p {
+  font-size: 24px;
+}
+/*------------------ .about-bleaching ------------------*/
+.about-bleaching {
+  padding: 62px 0 77px;
+  background: #dcecec;
+}
+.about-bleaching-block h4 {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.about-bleaching-block h6 {
+  font-weight: bold;
+  color: #009999;
+  margin-bottom: 20px;
+}
+.about-bleaching-block ol {
+  counter-reset: num;
+}
+.about-bleaching-block ol li {
+  position: relative;
+  padding-left: 33px;
+}
+.about-bleaching-block ol li::before {
+  content: counter(num) ".";
+  counter-increment: num;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1em;
+  width: 1em;
+}
+.about-bleaching-block + .about-bleaching-block {
+  margin-top: 50px;
+}
+/*------------------ .about-bleaching ------------------*/
+.kinds-bleaching h3 {
+  color: #009999;
+  font-weight: bold;
+  margin-top: 60px;
+  margin-bottom: 55px;
+  text-align: center;
+}
+.kinds-bleach-o,
+.kinds-bleach-e {
+  background: #f0f0f0;
+  padding: 50px 0;
+}
+.kinds-bleach-o span,
+.kinds-bleach-e span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #009999;
+}
+.kinds-bleach-o p,
+.kinds-bleach-e p,
+.kinds-bleach-o ul,
+.kinds-bleach-e ul {
+  margin-top: 30px;
+}
+.kinds-bleach-o p:first-of-type,
+.kinds-bleach-e p:first-of-type {
+  margin-top: 0;
+}
+.kinds-bleach-o ul,
+.kinds-bleach-e ul {
+  color: #009999;
+}
+.kinds-bleach-o ul li,
+.kinds-bleach-e ul li {
+  position: relative;
+  padding-left: 33px;
+}
+.kinds-bleach-o ul li::before,
+.kinds-bleach-e ul li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1em;
+  width: 1em;
+}
+.kinds-bleach-o .span-cyan,
+.kinds-bleach-e .span-cyan {
+  color: #009999;
+}
+.kinds-bleach-e {
+  background: #fff;
+}
+/*------------------ .kinds-bleaching-prices ------------------*/
+.kinds-bleaching-prices {
+  padding: 60px 0 77px;
+  background: #009999 url(../img/bg-l-prices.jpg) center no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.tbody-td-center th,
+.tbody-td-right th {
+  width: 50%;
+  color: #2eeeee;
+}
+.kinds-bleaching-table {
+  width: 100%;
+  color: #fff;
+}
+.kinds-bleaching-table > tbody > tr > td {
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #2eeeee;
+  text-align: center;
+}
+.kinds-bleaching-table > tbody > tr > td:first-child {
+  font-size: 18px;
+  text-align: left;
+  padding-left: 20px;
+}
+.kinds-bleaching-table > tbody > tr > td:last-child {
+  width: 200px;
+}
+.kinds-bleaching-table > tbody .outer-tbody-first-tr th {
+  border-top: 0px solid #000;
+}
+.kinds-bleaching-table > tbody .outer-tbody-second-tr td {
+  border-top: 0px solid #000;
+}

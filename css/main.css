@@ -2848,3 +2848,75 @@ a.btn-new-patients span {
 .kinds-bleaching-table > tbody .outer-tbody-second-tr td {
   border-top: 0px solid #000;
 }
+/*------------------ machines-children ------------------*/
+.machines-children {
+  padding: 50px 0 75px;
+}
+.m-children-title {
+  margin-bottom: 50px;
+}
+.m-children-title h2 {
+  font-weight: bold;
+  color: #009999;
+}
+.m-children-block h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.m-children-block p {
+  font-size: 24px;
+}
+.m-children-block p + p {
+  margin-top: 30px;
+}
+.m-children img {
+  width: 100%;
+}
+/*------------------ devices-situation ------------------*/
+.devices-situation {
+  background: #f0f0f0;
+  padding: 70px 0 90px;
+}
+.devices-situation h4 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+.situation-block {
+  background: #fff;
+  margin-top: 20px;
+  display: inline-block;
+  width: 100%;
+}
+.situation-block p + p {
+  margin-top: 20px;
+}
+.situation-img-1,
+.situation-img-2 {
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -1px;
+  width: 560px;
+}
+.situation-img-1 img,
+.situation-img-2 img {
+  width: 100%;
+}
+.situation-text-1,
+.situation-text-2 {
+  width: 560px;
+}
+.situation-text-2 {
+  padding: 35px 60px 0 60px;
+  float: left;
+}
+.situation-img-2 {
+  float: right;
+}
+.situation-text-1 {
+  padding: 35px 60px 0 30px;
+  float: right;
+}
+.situation-img-1 {
+  float: left;
+}

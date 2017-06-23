@@ -1063,6 +1063,9 @@
   .patients-block-text h5 {
     text-align: left;
   }
+  .oral-hygiene h2 {
+    margin-bottom: 35px;
+  }
   .teeth-whitening h2 {
     margin-bottom: 35px;
   }
@@ -1122,6 +1125,15 @@
   }
   .br-types-block-c h6 {
     font-size: 15px;
+  }
+  .hygiene-list-block h3 {
+    text-align: left;
+    font-size: 30px;
+  }
+  .kinds-hygiene h3 {
+    font-weight: bold;
+    text-align: left;
+    font-size: 30px;
   }
 }
 @media only screen and (max-width: 639px) {
@@ -1410,6 +1422,9 @@
     margin-top: 30px;
     font-size: 18px;
   }
+  .kinds-hygiene-table > tbody > tr > td:last-child {
+    width: 50%;
+  }
   .kinds-bleaching-table > tbody > tr > td:last-child {
     width: 160px;
   }
@@ -1549,6 +1564,10 @@
   }
   .braces-types h3 {
     font-size: 30px;
+  }
+  .oral-hygiene h2 {
+    margin-bottom: 35px;
+    font-size: 40px;
   }
 }
 @media only screen and (max-width: 480px) {
@@ -1713,8 +1732,14 @@
   .prices-treatment-table .table > tbody > tr > td {
     font-size: 16px;
   }
+  .oral-hygiene h2 {
+    font-size: 40px;
+  }
   .teeth-whitening h2 {
     font-size: 40px;
+  }
+  .kinds-hygiene-table > tbody > tr > td:last-child {
+    font-size: 20px;
   }
   .kinds-bleaching-table > tbody > tr > td:last-child {
     width: 130px;

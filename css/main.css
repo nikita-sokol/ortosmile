@@ -3038,3 +3038,81 @@ a.btn-new-patients span {
 .kinds-hygiene-table > tbody .outer-tbody-first-tr td {
   border-top: 0px solid #000;
 }
+/*------------------ slider-results ------------------*/
+.results {
+  padding: 50px 0 70px;
+  background: #fff;
+}
+.results h2 {
+  font-weight: bold;
+  margin-bottom: 55px;
+  text-align: left;
+  color: #009999;
+}
+.result-slider {
+  margin: 30px 0;
+}
+.result-slider img {
+  width: 100%;
+  margin: 0 auto;
+}
+.result-slider .carousel-control.left {
+  background-image: none;
+}
+.result-slider .carousel-control.right {
+  background-image: none;
+}
+.result-slider .glyphicon-chevron-left::before {
+  position: absolute;
+  content: "";
+  background: url(../img/slider-arrow-l.svg) 0 0 no-repeat;
+  background-size: cover;
+  left: 0px;
+  top: 0px;
+  width: 33px;
+  height: 65px;
+}
+.result-slider .glyphicon-chevron-right::before {
+  position: absolute;
+  content: "";
+  background: url(../img/slider-arrow-r.svg) 0 0 no-repeat;
+  background-size: cover;
+  left: 0px;
+  top: 0px;
+  width: 33px;
+  height: 65px;
+}
+.result-slider .carousel-indicators .active {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  background-color: #009999;
+}
+.result-slider .carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000\9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #009999;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+}
+.result-slider .carousel-indicators {
+  bottom: -40px;
+}
+.side-results-info {
+  background: #fff;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+.side-results-diagnosis strong {
+  font-weight: bold;
+}
+.bg-gallery {
+  background: #f0f0f0;
+  padding-top: 60px;
+}

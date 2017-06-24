@@ -483,6 +483,9 @@
   .results-info {
     margin-top: 10px;
   }
+  .side-results-info {
+    margin-top: 10px;
+  }
   .gallery-clinic-link {
     height: 345px;
   }
@@ -1080,6 +1083,14 @@
     float: left;
     width: 100%;
   }
+  .result-slider .glyphicon-chevron-left {
+    left: 30%;
+    margin-left: -10px;
+  }
+  .result-slider .glyphicon-chevron-right {
+    right: 60%;
+    margin-right: -10px;
+  }
 }
 @media only screen and (max-width: 650px) {
   .h-body h1 {
@@ -1341,6 +1352,10 @@
   .about-doctor-post {
     font-size: 18px;
   }
+  .result-slider .glyphicon-chevron-right {
+    right: 70%;
+    margin-right: -10px;
+  }
 }
 @media only screen and (max-width: 580px) {
   .results-img {
@@ -1569,6 +1584,10 @@
     margin-bottom: 35px;
     font-size: 40px;
   }
+  .result-slider .glyphicon-chevron-right {
+    right: 75%;
+    margin-right: -10px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .h-form p {
@@ -1640,6 +1659,10 @@
   }
   .m-children-img img {
     width: 100%;
+  }
+  .result-slider .glyphicon-chevron-right {
+    right: 85%;
+    margin-right: -10px;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -1749,5 +1772,9 @@
 @media only screen and (max-width: 360px) {
   #h-form-top input[type="submit"] {
     font-size: 16px;
+  }
+  .result-slider .glyphicon-chevron-right {
+    right: 100%;
+    margin-right: -10px;
   }
 }
